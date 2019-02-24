@@ -1,0 +1,7 @@
+JDK 11
+
+CharacterReplaceBenchmark.manualReplace                        avgt   25    58,474 ±   4,184   ns/op
+CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   25   112,000 ±   0,001    B/op
+
+CharacterReplaceBenchmark.stringReplace                        avgt   25    15,185 ±   0,067   ns/op
+CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   25    56,000 ±   0,001    B/op

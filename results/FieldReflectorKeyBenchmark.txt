@@ -1,0 +1,7 @@
+JDK 11
+                                  Mode  Cnt     Score    Error   Units
+original                          avgt   25   164,979 ±  3,562   ns/op
+patched                           avgt   25    25,562 ±  1,082   ns/op
+
+original:·gc.alloc.rate.norm      avgt   25   504,000 ±  0,001    B/op
+patched:·gc.alloc.rate.norm       avgt   25    64,000 ±  0,001    B/op

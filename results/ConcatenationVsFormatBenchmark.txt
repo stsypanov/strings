@@ -1,0 +1,22 @@
+JDK 11
+
+                                        (length)  Mode  Cnt   Score   Error   Units
+concatenation                                  5  avgt   25    21,1 ±   0,9   ns/op
+concatenation                                 10  avgt   25    20,4 ±   0,2   ns/op
+concatenation                                100  avgt   25    25,4 ±   0,6   ns/op
+concatenation                                200  avgt   25    39,8 ±   0,5   ns/op
+
+stringFormat                                   5  avgt   25   532,7 ±  31,2   ns/op
+stringFormat                                  10  avgt   25   567,4 ±  39,0   ns/op
+stringFormat                                 100  avgt   25   603,1 ±  99,9   ns/op
+stringFormat                                 200  avgt   25   704,1 ±  93,5   ns/op
+
+concatenation:·gc.alloc.rate.norm              5  avgt   25    56,0 ±   0,0    B/op
+concatenation:·gc.alloc.rate.norm             10  avgt   25    64,0 ±   0,0    B/op
+concatenation:·gc.alloc.rate.norm            100  avgt   25   248,0 ±   0,0    B/op
+concatenation:·gc.alloc.rate.norm            200  avgt   25   448,0 ±   0,0    B/op
+
+stringFormat:·gc.alloc.rate.norm               5  avgt   25   683,2 ±  17,1    B/op
+stringFormat:·gc.alloc.rate.norm              10  avgt   25   747,2 ±  17,1    B/op
+stringFormat:·gc.alloc.rate.norm             100  avgt   25  1208,0 ±   0,0    B/op
+stringFormat:·gc.alloc.rate.norm             200  avgt   25  1704,0 ±   0,0    B/op

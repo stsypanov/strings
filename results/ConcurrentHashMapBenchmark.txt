@@ -1,0 +1,52 @@
+JDK 8
+
+2 threads
+
+Benchmark                                   Mode  Cnt   Score   Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  66,492 ± 2,036  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20   4,454 ± 0,110  ns/op
+
+4 threads
+
+Benchmark                                   Mode  Cnt    Score   Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  155,975 ± 8,850  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20    5,616 ± 2,073  ns/op
+
+6 threads
+
+Benchmark                                   Mode  Cnt    Score    Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  203,188 ± 10,547  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20    7,024 ±  0,456  ns/op
+
+8 threads
+
+Benchmark                                   Mode  Cnt    Score    Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  302,036 ± 31,702  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20    7,990 ±  0,144  ns/op
+
+
+JDK 11
+
+2 threads
+
+Benchmark                                   Mode  Cnt  Score   Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  7,173 ± 0,249  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20  5,118 ± 0,395  ns/op
+
+4 threads
+
+Benchmark                                   Mode  Cnt  Score   Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  7,991 ± 0,447  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20  5,270 ± 0,366  ns/op
+
+6 threads
+
+Benchmark                                   Mode  Cnt   Score   Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  11,919 ± 0,865  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20   7,249 ± 0,199  ns/op
+
+8 threads
+
+Benchmark                                   Mode  Cnt   Score   Error  Units
+ConcurrentHashMapBenchmark.computeIfAbsent  avgt   20  14,360 ± 0,892  ns/op
+ConcurrentHashMapBenchmark.getAndPut        avgt   20   8,511 ± 0,229  ns/op

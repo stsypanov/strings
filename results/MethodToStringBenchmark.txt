@@ -1,0 +1,4 @@
+JDK 11
+                                       Mode  Cnt   Score  Error   Units
+methodToString                         avgt   25    85,4 ±  1,3   ns/op
+methodToString:·gc.alloc.rate.norm     avgt   25   344,0 ±  0,0    B/op

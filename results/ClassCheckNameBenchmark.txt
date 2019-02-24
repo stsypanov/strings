@@ -1,0 +1,4 @@
+Benchmark         Mode  Cnt   Score    Error   Units
+
+effective         avgt   25   6,770 ±  1,247   ns/op
+ineffective       avgt   25  19,174 ±  7,000   ns/op

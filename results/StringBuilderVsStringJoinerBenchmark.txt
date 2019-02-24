@@ -1,0 +1,71 @@
+JDK 8
+
+Benchmark                              (latin)  (length)  Mode  Cnt      Score      Error   Units
+stringBuilder                             true        10  avgt   25    191,275 ±    6,133   ns/op
+stringBuilder                             true       100  avgt   25    969,563 ±   33,790   ns/op
+stringBuilder                             true      1000  avgt   25   7583,386 ±  175,206   ns/op
+
+stringJoiner                              true        10  avgt   25    250,159 ±   11,501   ns/op
+stringJoiner                              true       100  avgt   25    947,635 ±   34,487   ns/op
+stringJoiner                              true      1000  avgt   25   7021,070 ±  257,198   ns/op
+
+stringBuilder                            false        10  avgt   25    200,276 ±    3,035   ns/op
+stringBuilder                            false       100  avgt   25    956,259 ±   65,456   ns/op
+stringBuilder                            false      1000  avgt   25   7783,128 ±  449,242   ns/op
+
+stringJoiner                             false        10  avgt   25    241,270 ±    4,859   ns/op
+stringJoiner                             false       100  avgt   25    893,498 ±   27,600   ns/op
+stringJoiner                             false      1000  avgt   25   6962,415 ±  245,902   ns/op
+
+stringBuilder:·gc.alloc.rate.norm         true        10  avgt   25    896,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm         true       100  avgt   25   8584,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm         true      1000  avgt   25  82384,002 ±    0,001    B/op
+
+stringJoiner:·gc.alloc.rate.norm          true        10  avgt   25    936,000 ±    0,001    B/op
+stringJoiner:·gc.alloc.rate.norm          true       100  avgt   25   8654,400 ±    9,786    B/op
+stringJoiner:·gc.alloc.rate.norm          true      1000  avgt   25  82480,002 ±    0,001    B/op
+
+stringBuilder:·gc.alloc.rate.norm        false        10  avgt   25    896,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm        false       100  avgt   25   8584,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm        false      1000  avgt   25  82384,002 ±    0,001    B/op
+
+stringJoiner:·gc.alloc.rate.norm         false        10  avgt   25    942,400 ±    9,786    B/op
+stringJoiner:·gc.alloc.rate.norm         false       100  avgt   25   8660,800 ±   11,985    B/op
+stringJoiner:·gc.alloc.rate.norm         false      1000  avgt   25  82480,002 ±    0,001    B/op
+
+
+JDK11
+
+Benchmark                               (latin)  (length)  Mode  Cnt      Score      Error   Units
+
+stringBuilder                                  true        10  avgt   25    165,525 ±   7,286   ns/op
+stringBuilder                                  true       100  avgt   25    494,348 ±  10,150   ns/op
+stringBuilder                                  true      1000  avgt   25   4081,775 ± 157,966   ns/op
+
+stringJoiner                                   true        10  avgt   25    143,421 ±   2,962   ns/op
+stringJoiner                                   true       100  avgt   25    407,158 ±  53,493   ns/op
+stringJoiner                                   true      1000  avgt   25   2607,701 ± 142,284   ns/op
+
+stringBuilder                                 false        10  avgt   25    289,713 ±  36,911   ns/op
+stringBuilder                                 false       100  avgt   25   1059,395 ±  63,980   ns/op
+stringBuilder                                 false      1000  avgt   25   7271,479 ± 112,256   ns/op
+
+stringJoiner                                  false        10  avgt   25    182,038 ±  15,558   ns/op
+stringJoiner                                  false       100  avgt   25    595,636 ±  19,248   ns/op
+stringJoiner                                  false      1000  avgt   25   3680,257 ± 109,908   ns/op
+
+stringBuilder:·gc.alloc.rate.norm              true        10  avgt   25    536,000 ±   0,001    B/op
+stringBuilder:·gc.alloc.rate.norm              true       100  avgt   25   4400,000 ±   0,001    B/op
+stringBuilder:·gc.alloc.rate.norm              true      1000  avgt   25  41304,001 ±   0,001    B/op
+
+stringJoiner:·gc.alloc.rate.norm               true        10  avgt   25    520,000 ±   0,001    B/op
+stringJoiner:·gc.alloc.rate.norm               true       100  avgt   25   3224,000 ±   0,001    B/op
+stringJoiner:·gc.alloc.rate.norm               true      1000  avgt   25  30224,001 ±   0,001    B/op
+
+stringBuilder:·gc.alloc.rate.norm             false        10  avgt   25   1088,000 ±   0,001    B/op
+stringBuilder:·gc.alloc.rate.norm             false       100  avgt   25   9744,000 ±   0,001    B/op
+stringBuilder:·gc.alloc.rate.norm             false      1000  avgt   25  93448,002 ±   0,001    B/op
+
+stringJoiner:·gc.alloc.rate.norm              false        10  avgt   25    768,000 ±  12,232    B/op
+stringJoiner:·gc.alloc.rate.norm              false       100  avgt   25   5264,000 ±   0,001    B/op
+stringJoiner:·gc.alloc.rate.norm              false      1000  avgt   25  50272,001 ±  12,232    B/op
