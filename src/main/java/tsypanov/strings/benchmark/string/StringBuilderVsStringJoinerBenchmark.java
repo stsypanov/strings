@@ -1,6 +1,5 @@
 package tsypanov.strings.benchmark.string;
 
-import tsypanov.strings.source.string.Joiner;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
@@ -10,10 +9,11 @@ import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
-import tsypanov.strings.source.utils.RandomStringGenerator;
 
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
+
+import tsypanov.strings.source.string.Joiner;
+import tsypanov.strings.source.utils.RandomStringGenerator;
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @BenchmarkMode(value = Mode.AverageTime)
@@ -50,18 +50,14 @@ public class StringBuilderVsStringJoinerBenchmark {
       final int arrayLength = 10;
       RandomStringGenerator generator = new RandomStringGenerator();
 
-      String[] latinStrArray = new String[arrayLength];
-      String[] nonLatinStrArray = new String[arrayLength];
+      stringArray = new String[arrayLength];
 
       for (int i = 0; i < arrayLength; i++) {
-        String latinStr = generator.randomString("abcdefghijklmnopqrstuvwxyz", length);
-        String nonLatinStr = generator.randomString("абвгдеёжзиклмнопрстуфхцчшщьыъэюя", length);
+        String string = latin ? generator.randomString("abcdefghijklmnopqrstuvwxyz", length)
+                              : generator.randomString("абвгдеёжзиклмнопрстуфхцчшщьыъэюя", length);
 
-        latinStrArray[i] = latinStr;
-        nonLatinStrArray[i] = nonLatinStr;
+        stringArray[i] = string;
       }
-
-      stringArray = latin ? latinStrArray : nonLatinStrArray;
     }
 
   }
