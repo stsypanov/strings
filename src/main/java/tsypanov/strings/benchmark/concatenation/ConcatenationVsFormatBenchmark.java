@@ -33,7 +33,7 @@ public class ConcatenationVsFormatBenchmark {
     String str1;
     String str2;
 
-    @Param({"5", "10", "100", "200"})
+    @Param({"10", "100", "1000"})
     private int length;
 
     @Setup
