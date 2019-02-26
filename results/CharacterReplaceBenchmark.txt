@@ -1,7 +1,28 @@
 JDK 11
 
-CharacterReplaceBenchmark.manualReplace                        avgt   25    58,474 ±   4,184   ns/op
-CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   25   112,000 ±   0,001    B/op
+klass = java.lang.String.class
 
-CharacterReplaceBenchmark.stringReplace                        avgt   25    15,185 ±   0,067   ns/op
-CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   25    56,000 ±   0,001    B/op
+Benchmark                                                      Mode  Cnt     Score     Error   Units
+CharacterReplaceBenchmark.manualReplace                        avgt   50    43,312 ±   1,767   ns/op
+CharacterReplaceBenchmark.stringReplace                        avgt   50    30,741 ±   3,247   ns/op
+
+CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   50    56,000 ±   0,001    B/op
+CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   50   112,000 ±   0,001    B/op
+
+klass = tsypanov.strings.benchmark.string.CharacterReplaceBenchmark.class
+
+Benchmark                                                      Mode  Cnt     Score     Error   Units
+CharacterReplaceBenchmark.manualReplace                        avgt   50   160,336 ±   2,628   ns/op
+CharacterReplaceBenchmark.stringReplace                        avgt   50    67,258 ±   1,535   ns/op
+
+CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   50   200,000 ±   0,001    B/op
+CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   50   240,000 ±   0,001    B/op
+
+klass = org.springframework.objenesis.instantiator.perc.PercSerializationInstantiator.class
+
+Benchmark                                                      Mode  Cnt     Score     Error   Units
+CharacterReplaceBenchmark.manualReplace                        avgt   50   212,368 ±   3,370   ns/op
+CharacterReplaceBenchmark.stringReplace                        avgt   50    75,503 ±   1,028   ns/op
+
+CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   50   360,000 ±   0,001    B/op
+CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   50   272,000 ±   0,001    B/op

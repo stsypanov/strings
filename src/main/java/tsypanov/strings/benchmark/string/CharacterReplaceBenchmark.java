@@ -33,5 +33,6 @@ public class CharacterReplaceBenchmark {
   public static class Data {
     private final Class<?> klass = String.class;
 //    private final Class<?> klass = CharacterReplaceBenchmark.class; //try this to see the difference
+//    private final Class<?> klass = org.springframework.objenesis.instantiator.perc.PercSerializationInstantiator.class; //try this to see the difference
   }
 }
