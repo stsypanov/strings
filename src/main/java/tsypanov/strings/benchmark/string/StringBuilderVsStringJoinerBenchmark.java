@@ -43,19 +43,23 @@ public class StringBuilderVsStringJoinerBenchmark {
     @Param({"10", "100", "1000"})
     private int length;
 
+    @Param("10")
+    private int stringLength;
+
     private String[] stringArray;
 
     @Setup
     public void setup() {
-      final int arrayLength = 10;
       RandomStringGenerator generator = new RandomStringGenerator();
 
-      stringArray = new String[arrayLength];
+      stringArray = new String[stringLength];
 
-      for (int i = 0; i < arrayLength; i++) {
-        String string = latin ? generator.randomString("abcdefghijklmnopqrstuvwxyz", length)
-                              : generator.randomString("абвгдеёжзиклмнопрстуфхцчшщьыъэюя", length);
+      String alphabet = latin
+              ? "abcdefghijklmnopqrstuvwxyz"        //English
+              : "абвгдеёжзиклмнопрстуфхцчшщьыъэюя"; //Russian
 
+      for (int i = 0; i < stringLength; i++) {
+        String string = generator.randomString(alphabet, length);
         stringArray[i] = string;
       }
     }
