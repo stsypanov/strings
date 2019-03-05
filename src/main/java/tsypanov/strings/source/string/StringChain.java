@@ -21,8 +21,8 @@ public class StringChain {
   private int len;
 
   /**
-   * Constructs a {@code StringConstructor} with no characters in it, with no {@code prefix} or {@code suffix}, and a
-   * copy of the supplied {@code delimiter}. If no characters are added to the {@code StringConstructor} and methods
+   * Constructs a {@code StringChain} with no characters in it, with no {@code prefix} or {@code suffix}, and a
+   * copy of the supplied {@code delimiter}. If no characters are added to the {@code StringChain} and methods
    * accessing the value of it are invoked, it will not return a {@code prefix} or {@code suffix} (or properties
    * thereof) in the result, unless {@code setEmptyValue} has first been called.
    */
@@ -31,8 +31,8 @@ public class StringChain {
   }
 
   /**
-   * Constructs a {@code StringConstructor} with no characters in it using copies of the supplied {@code prefix},
-   * {@code delimiter} and {@code suffix}. If no characters are added to the {@code StringConstructor}
+   * Constructs a {@code StringChain} with no characters in it using copies of the supplied {@code prefix},
+   * {@code delimiter} and {@code suffix}. If no characters are added to the {@code StringChain}
    * and methods accessing the string value of it are invoked, it will return the {@code prefix + suffix}
    * (or properties thereof) in the result, unless {@code setEmptyValue} has first been called.
    */
@@ -54,7 +54,7 @@ public class StringChain {
    * delimiter}, and the {@code suffix}, unless no elements have been added in which case, the {@code prefix + suffix}
    * or the {@code emptyValue} characters are returned.
    *
-   * @return the string representation of this {@code StringConstructor}
+   * @return the string representation of this {@code StringChain}
    */
   @Override
   public String toString() {
@@ -72,11 +72,11 @@ public class StringChain {
   }
 
   /**
-   * Adds a copy of the given {@code CharSequence} value as the next element of the {@code StringConstructor} value. If
+   * Adds a copy of the given {@code CharSequence} value as the next element of the {@code StringChain} value. If
    * {@code cs} is {@code null}, then {@code "null"} is added.
    *
    * @param cs The element to add
-   * @return a reference to this {@code StringConstructor}
+   * @return a reference to this {@code StringChain}
    */
   public StringChain add(CharSequence cs) {
     final String elt = String.valueOf(cs);
@@ -105,20 +105,20 @@ public class StringChain {
   }
 
   /**
-   * Adds the contents of the given {@code StringConstructor} without prefix and suffix as the next element if it is
-   * non-empty. If the given {@code StringConstructor} is empty, the call has no effect.
+   * Adds the contents of the given {@code StringChain} without prefix and suffix as the next element if it is
+   * non-empty. If the given {@code StringChain} is empty, the call has no effect.
    *
-   * <p>A {@code StringConstructor} is empty if {@link #add(CharSequence) add()}
-   * has never been called, and if {@code merge()} has never been called with a non-empty {@code StringConstructor}
+   * <p>A {@code StringChain} is empty if {@link #add(CharSequence) add()}
+   * has never been called, and if {@code merge()} has never been called with a non-empty {@code StringChain}
    * argument.
    *
-   * <p>If the other {@code StringConstructor} is using a different delimiter,
-   * then elements from the other {@code StringConstructor} are concatenated with that delimiter and the result is
-   * appended to this {@code StringConstructor} as a single element.
+   * <p>If the other {@code StringChain} is using a different delimiter,
+   * then elements from the other {@code StringChain} are concatenated with that delimiter and the result is
+   * appended to this {@code StringChain} as a single element.
    *
-   * @param other The {@code StringConstructor} whose contents should be merged into this one
-   * @return This {@code StringConstructor}
-   * @throws NullPointerException if the other {@code StringConstructor} is null
+   * @param other The {@code StringChain} whose contents should be merged into this one
+   * @return This {@code StringChain}
+   * @throws NullPointerException if the other {@code StringChain} is null
    */
   public StringChain merge(StringChain other) {
     Objects.requireNonNull(other);
@@ -144,11 +144,11 @@ public class StringChain {
   }
 
   /**
-   * Returns the length of the {@code String} representation of this {@code StringConstructor}. Note that if no add
+   * Returns the length of the {@code String} representation of this {@code StringChain}. Note that if no add
    * methods have been called, then the length of the {@code String} representation (either {@code prefix + suffix} or
    * {@code emptyValue}) will be returned. The value should be equivalent to {@code toString().length()}.
    *
-   * @return the length of the current value of {@code StringConstructor}
+   * @return the length of the current value of {@code StringChain}
    */
   public int length() {
     return size == 0 ? 0 : len;
