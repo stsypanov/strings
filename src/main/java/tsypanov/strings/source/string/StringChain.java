@@ -94,6 +94,17 @@ public class StringChain {
   }
 
   /**
+   * Adds String representation of the given {@code Object} as the next element of the {@code StringChain} value.
+   * If {@code o} is {@code null}, then {@code "null"} is added.
+   *
+   * @param  o The element to add
+   * @return a reference to this {@code StringChain}
+   */
+  public StringChain add(Object o) {
+    return this.add(String.valueOf(o));
+  }
+
+  /**
    * Adds the contents of the given {@code StringConstructor} without prefix and suffix as the next element if it is
    * non-empty. If the given {@code StringConstructor} is empty, the call has no effect.
    *

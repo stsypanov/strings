@@ -56,6 +56,17 @@ class StringChainTest {
   }
 
   @Test
+  void addObject() {
+    Object o = "123";
+    StringChain sc = new StringChain();
+
+    sc.add(o);
+    sc.add(null);
+
+    assertEquals("123" + null, sc.toString());
+  }
+
+  @Test
   void addAlladd() {
     StringChain sc = new StringChain(1);
 
