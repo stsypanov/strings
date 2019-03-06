@@ -17,7 +17,7 @@ import tsypanov.strings.source.utils.RandomStringGenerator;
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @BenchmarkMode(value = Mode.AverageTime)
-@Fork(jvmArgsAppend = {"-XX:+UseParallelGC", "-Xms2g", "-Xmx2g"})
+@Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
 public class StringBuilderVsStringChainBenchmark {
 
   @Benchmark
@@ -30,6 +30,11 @@ public class StringBuilderVsStringChainBenchmark {
     return StringConcat.concatWithStringChain(data.stringArray);
   }
 
+  @Benchmark
+  public String stringChainDefault(Data data) {
+    return StringConcat.concatWithStringChainDefault(data.stringArray);
+  }
+
   @State(Scope.Thread)
   public static class Data {
 
@@ -39,7 +44,7 @@ public class StringBuilderVsStringChainBenchmark {
     @Param({"10", "100", "1000"})
     private int stringCount;
 
-    @Param({"1", "10", "20"})
+    @Param({"1", "10", "50", "100"})
     private int stringLength;
 
     private String[] stringArray;
