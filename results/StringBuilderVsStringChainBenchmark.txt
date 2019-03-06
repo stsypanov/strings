@@ -1,0 +1,677 @@
+Benchmark                                                                                (latin)  (stringCount)  (stringLength)  Mode  Cnt       Score      Error   Units
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true             10               1  avgt  100      74,940 ±    0,430   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true             10               1  avgt  100    1066,746 ±    5,901  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true             10               1  avgt  100      88,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true             10               1  avgt  100    1066,603 ±   14,541  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true             10               1  avgt  100      87,995 ±    1,152    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true             10               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true             10               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space               true             10               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space.norm          true             10               1  avgt  100       0,002 ±    0,002    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true             10               1  avgt  100     913,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true             10               1  avgt  100    1016,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true             10              10  avgt  100     117,937 ±    1,167   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true             10              10  avgt  100    3699,128 ±   33,726  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true             10              10  avgt  100     480,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true             10              10  avgt  100    3703,762 ±   39,218  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true             10              10  avgt  100     480,588 ±    2,341    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true             10              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true             10              10  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true             10              10  avgt  100    3170,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true             10              10  avgt  100    3161,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true             10              50  avgt  100     224,931 ±    1,437   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true             10              50  avgt  100    9176,345 ±   53,104  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true             10              50  avgt  100    2272,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true             10              50  avgt  100    9195,073 ±   56,461  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true             10              50  avgt  100    2276,626 ±    4,095    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true             10              50  avgt  100       0,006 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true             10              50  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true             10              50  avgt  100    7870,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true             10              50  avgt  100    7680,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true             10             100  avgt  100     398,933 ±    5,150   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true             10             100  avgt  100    9846,502 ±  107,077  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true             10             100  avgt  100    4320,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true             10             100  avgt  100    9878,494 ±  108,519  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true             10             100  avgt  100    4334,044 ±    7,496    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true             10             100  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true             10             100  avgt  100       0,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true             10             100  avgt  100    8455,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true             10             100  avgt  100    8467,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true            100               1  avgt  100     699,721 ±    1,129   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true            100               1  avgt  100     623,012 ±    0,999  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true            100               1  avgt  100     480,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true            100               1  avgt  100     628,382 ±   19,302  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true            100               1  avgt  100     484,151 ±   14,902    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true            100               1  avgt  100      ? 10??             MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true            100               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space               true            100               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space.norm          true            100               1  avgt  100       0,015 ±    0,015    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true            100               1  avgt  100     538,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true            100               1  avgt  100     676,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true            100              10  avgt  100     864,994 ±    1,602   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true            100              10  avgt  100    3611,850 ±    6,666  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true            100              10  avgt  100    3440,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true            100              10  avgt  100    3620,792 ±   15,406  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true            100              10  avgt  100    3448,518 ±   13,278    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true            100              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true            100              10  avgt  100       0,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true            100              10  avgt  100    3099,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true            100              10  avgt  100    3069,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true            100              50  avgt  100    2079,654 ±    4,957   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true            100              50  avgt  100    8063,599 ±   19,062  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true            100              50  avgt  100   18464,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true            100              50  avgt  100    8106,166 ±   25,644  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true            100              50  avgt  100   18561,511 ±   41,156    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true            100              50  avgt  100       0,005 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true            100              50  avgt  100       0,012 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true            100              50  avgt  100    6938,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true            100              50  avgt  100    7034,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true            100             100  avgt  100    3370,915 ±    6,142   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true            100             100  avgt  100    9757,490 ±   17,710  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true            100             100  avgt  100   36216,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true            100             100  avgt  100    9824,727 ±   23,983  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true            100             100  avgt  100   36465,576 ±   60,713    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true            100             100  avgt  100       0,022 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true            100             100  avgt  100       0,083 ±    0,005    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true            100             100  avgt  100    8409,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true            100             100  avgt  100    8523,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true           1000               1  avgt  100    6185,827 ±   11,984   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true           1000               1  avgt  100     505,062 ±    0,966  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true           1000               1  avgt  100    3440,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true           1000               1  avgt  100     511,443 ±   18,915  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true           1000               1  avgt  100    3483,778 ±  129,665    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true           1000               1  avgt  100      ? 10??             MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true           1000               1  avgt  100       0,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space               true           1000               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space.norm          true           1000               1  avgt  100       0,130 ±    0,133    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true           1000               1  avgt  100     439,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true           1000               1  avgt  100     601,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true           1000              10  avgt  100    9377,489 ±   19,635   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true           1000              10  avgt  100    4558,164 ±    9,416  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true           1000              10  avgt  100   47064,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true           1000              10  avgt  100    4616,204 ±   20,696  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true           1000              10  avgt  100   47663,063 ±  182,989    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true           1000              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true           1000              10  avgt  100       0,022 ±    0,004    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true           1000              10  avgt  100    3951,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true           1000              10  avgt  100    4010,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true           1000              50  avgt  100   18621,189 ±   52,791   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true           1000              50  avgt  100    7642,840 ±   21,465  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true           1000              50  avgt  100  156696,003 ±    0,002    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true           1000              50  avgt  100    7671,423 ±   27,144  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true           1000              50  avgt  100  157281,594 ±  315,460    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true           1000              50  avgt  100       0,091 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true           1000              50  avgt  100       1,874 ±    0,039    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true           1000              50  avgt  100    6566,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true           1000              50  avgt  100    6675,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                           true           1000             100  avgt  100   30366,786 ±   73,737   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                            true           1000             100  avgt  100    9243,238 ±   22,462  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                       true           1000             100  avgt  100  309048,005 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                   true           1000             100  avgt  100    9325,847 ±   28,396  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm              true           1000             100  avgt  100  311809,491 ±  537,364    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                      true           1000             100  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                 true           1000             100  avgt  100       0,137 ±    0,026    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                 true           1000             100  avgt  100    7982,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                  true           1000             100  avgt  100    8099,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false             10               1  avgt  100     108,363 ±    3,985   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false             10               1  avgt  100    1625,843 ±   31,935  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false             10               1  avgt  100     192,800 ±    3,749    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false             10               1  avgt  100    1626,330 ±   37,231  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false             10               1  avgt  100     192,838 ±    4,314    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false             10               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false             10               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space              false             10               1  avgt  100       0,017 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space.norm         false             10               1  avgt  100       0,002 ±    0,002    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false             10               1  avgt  100    1392,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false             10               1  avgt  100    1391,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false             10              10  avgt  100     167,625 ±    0,294   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false             10              10  avgt  100    5504,757 ±    9,560  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false             10              10  avgt  100    1016,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false             10              10  avgt  100    5515,845 ±   19,739  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false             10              10  avgt  100    1018,046 ±    3,170    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false             10              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false             10              10  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false             10              10  avgt  100    4721,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false             10              10  avgt  100    4567,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false             10              50  avgt  100     450,258 ±    2,220   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false             10              50  avgt  100   10036,997 ±   44,030  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false             10              50  avgt  100    4975,200 ±    3,749    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false             10              50  avgt  100   10067,789 ±   46,759  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false             10              50  avgt  100    4990,468 ±    8,847    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false             10              50  avgt  100       0,005 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false             10              50  avgt  100       0,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false             10              50  avgt  100    8617,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false             10              50  avgt  100    8560,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false             10             100  avgt  100     853,115 ±    2,536   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false             10             100  avgt  100   10228,942 ±   30,067  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false             10             100  avgt  100    9608,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false             10             100  avgt  100   10273,445 ±   33,376  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false             10             100  avgt  100    9649,800 ±   13,130    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false             10             100  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false             10             100  avgt  100       0,004 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false             10             100  avgt  100    8793,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false             10             100  avgt  100    8816,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false            100               1  avgt  100     977,686 ±    1,123   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false            100               1  avgt  100     943,778 ±    1,081  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false            100               1  avgt  100    1016,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false            100               1  avgt  100     945,051 ±   11,407  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false            100               1  avgt  100    1017,361 ±   12,098    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false            100               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false            100               1  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space              false            100               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space.norm         false            100               1  avgt  100       0,020 ±    0,021    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false            100               1  avgt  100     809,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false            100               1  avgt  100     896,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false            100              10  avgt  100    1336,688 ±   27,681   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false            100              10  avgt  100    5298,643 ±   98,686  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false            100              10  avgt  100    7772,800 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false            100              10  avgt  100    5317,219 ±   99,885  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false            100              10  avgt  100    7800,256 ±   27,093    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false            100              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false            100              10  avgt  100       0,004 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false            100              10  avgt  100    4551,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false            100              10  avgt  100    4544,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false            100              50  avgt  100    3640,121 ±   47,872   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false            100              50  avgt  100   10444,621 ±  121,744  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false            100              50  avgt  100   41808,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false            100              50  avgt  100   10479,278 ±  122,571  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false            100              50  avgt  100   41947,171 ±   67,298    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false            100              50  avgt  100       0,006 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false            100              50  avgt  100       0,022 ±    0,006    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false            100              50  avgt  100    8969,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false            100              50  avgt  100    8829,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false            100             100  avgt  100    6320,203 ±   16,030   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false            100             100  avgt  100   11834,258 ±   29,467  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false            100             100  avgt  100   82352,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false            100             100  avgt  100   11934,774 ±   32,990  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false            100             100  avgt  100   83051,626 ±  114,068    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false            100             100  avgt  100       0,086 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false            100             100  avgt  100       0,601 ±    0,009    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false            100             100  avgt  100   10215,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false            100             100  avgt  100   10341,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false           1000               1  avgt  100    9273,220 ±   12,522   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false           1000               1  avgt  100     763,123 ±    1,016  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false           1000               1  avgt  100    7792,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false           1000               1  avgt  100     759,283 ±   19,938  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false           1000               1  avgt  100    7753,446 ±  206,222    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false           1000               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false           1000               1  avgt  100       0,008 ±    0,005    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space              false           1000               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Survivor_Space.norm         false           1000               1  avgt  100       0,194 ±    0,199    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false           1000               1  avgt  100     650,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false           1000               1  avgt  100     756,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false           1000              10  avgt  100   14005,243 ±   79,458   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false           1000              10  avgt  100    6743,206 ±   39,008  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false           1000              10  avgt  100  103959,202 ±    3,749    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false           1000              10  avgt  100    6802,184 ±   43,111  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false           1000              10  avgt  100  104868,237 ±  262,289    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false           1000              10  avgt  100       0,059 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false           1000              10  avgt  100       0,907 ±    0,015    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false           1000              10  avgt  100    5822,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false           1000              10  avgt  100    5903,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false           1000              50  avgt  100   31349,821 ±   59,796   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false           1000              50  avgt  100   10523,430 ±   19,851  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false           1000              50  avgt  100  363248,005 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false           1000              50  avgt  100   10606,423 ±   27,359  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false           1000              50  avgt  100  366111,504 ±  555,038    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false           1000              50  avgt  100       0,220 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false           1000              50  avgt  100       7,578 ±    0,039    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false           1000              50  avgt  100    9078,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false           1000              50  avgt  100    9196,000                 ms
+StringBuilderVsStringChainBenchmark.stringBuilder                                          false           1000             100  avgt  100   61328,772 ± 1052,614   ns/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate                           false           1000             100  avgt  100   10659,699 ±  184,271  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.alloc.rate.norm                      false           1000             100  avgt  100  717992,009 ±    0,007    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space                  false           1000             100  avgt  100   10751,282 ±  187,588  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Eden_Space.norm             false           1000             100  avgt  100  724152,542 ± 1234,932    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen                     false           1000             100  avgt  100       0,463 ±    0,015  MB/sec
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.churn.G1_Old_Gen.norm                false           1000             100  avgt  100      31,158 ±    0,750    B/op
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.count                                false           1000             100  avgt  100    9202,000             counts
+StringBuilderVsStringChainBenchmark.stringBuilder:·gc.time                                 false           1000             100  avgt  100    9441,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true             10               1  avgt  100      64,210 ±    0,207   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true             10               1  avgt  100    2150,132 ±    6,852  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true             10               1  avgt  100     152,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true             10               1  avgt  100    2151,016 ±   19,588  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true             10               1  avgt  100     152,064 ±    1,309    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true             10               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true             10               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true             10               1  avgt  100    1841,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true             10               1  avgt  100    1858,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true             10              10  avgt  100      90,015 ±    0,477   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true             10              10  avgt  100    4221,493 ±   10,466  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true             10              10  avgt  100     418,400 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true             10              10  avgt  100    4227,249 ±   17,245  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true             10              10  avgt  100     418,980 ±    2,961    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true             10              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true             10              10  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true             10              10  avgt  100    3618,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true             10              10  avgt  100    3557,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true             10              50  avgt  100     167,211 ±    0,760   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true             10              50  avgt  100    8778,783 ±   39,690  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true             10              50  avgt  100    1616,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true             10              50  avgt  100    8806,022 ±   42,751  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true             10              50  avgt  100    1621,015 ±    2,944    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true             10              50  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true             10              50  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true             10              50  avgt  100    7537,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true             10              50  avgt  100    7466,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true             10             100  avgt  100     312,596 ±    1,108   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true             10             100  avgt  100    9042,370 ±   32,266  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true             10             100  avgt  100    3112,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true             10             100  avgt  100    9067,739 ±   36,047  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true             10             100  avgt  100    3120,740 ±    6,077    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true             10             100  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true             10             100  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true             10             100  avgt  100    7761,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true             10             100  avgt  100    7841,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true            100               1  avgt  100     533,194 ±    4,657   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true            100               1  avgt  100    1326,381 ±    7,174  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true            100               1  avgt  100     778,400 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true            100               1  avgt  100    1328,375 ±   20,053  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true            100               1  avgt  100     779,604 ±   11,481    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true            100               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true            100               1  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space                 true            100               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space.norm            true            100               1  avgt  100       0,011 ±    0,011    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true            100               1  avgt  100    1137,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true            100               1  avgt  100    1199,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true            100              10  avgt  100     734,518 ±    2,866   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true            100              10  avgt  100    4293,497 ±   16,000  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true            100              10  avgt  100    3472,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true            100              10  avgt  100    4308,976 ±   22,014  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true            100              10  avgt  100    3484,505 ±   11,760    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true            100              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true            100              10  avgt  100       0,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true            100              10  avgt  100    3688,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true            100              10  avgt  100    3752,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true            100              50  avgt  100    1589,293 ±    4,323   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true            100              50  avgt  100    8843,369 ±   23,657  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true            100              50  avgt  100   15474,400 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true            100              50  avgt  100    8943,791 ±   28,360  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true            100              50  avgt  100   15650,124 ±   26,736    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true            100              50  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true            100              50  avgt  100       0,006 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true            100              50  avgt  100    7655,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true            100              50  avgt  100    7909,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true            100             100  avgt  100    2725,058 ±   13,544   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true            100             100  avgt  100   10157,832 ±   50,292  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true            100             100  avgt  100   30472,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true            100             100  avgt  100   10280,453 ±   53,879  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true            100             100  avgt  100   30839,816 ±   50,965    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true            100             100  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true            100             100  avgt  100       0,009 ±    0,002    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true            100             100  avgt  100    8799,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true            100             100  avgt  100    9119,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true           1000               1  avgt  100    5213,218 ±   81,681   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true           1000               1  avgt  100    1235,241 ±   17,700  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true           1000               1  avgt  100    7076,801 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true           1000               1  avgt  100    1234,893 ±   24,074  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true           1000               1  avgt  100    7074,459 ±   91,588    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true           1000               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true           1000               1  avgt  100       0,007 ±    0,004    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space                 true           1000               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space.norm            true           1000               1  avgt  100       0,109 ±    0,112    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true           1000               1  avgt  100    1057,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true           1000               1  avgt  100    1157,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true           1000              10  avgt  100    7556,307 ±   39,128   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true           1000              10  avgt  100    4096,097 ±   21,075  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true           1000              10  avgt  100   34072,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true           1000              10  avgt  100    4132,512 ±   26,811  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true           1000              10  avgt  100   34374,639 ±  128,301    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true           1000              10  avgt  100       0,010 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true           1000              10  avgt  100       0,084 ±    0,018    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true           1000              10  avgt  100    3537,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true           1000              10  avgt  100    3698,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true           1000              50  avgt  100   18035,033 ±   95,106   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true           1000              50  avgt  100    7761,706 ±   40,676  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true           1000              50  avgt  100  154096,003 ±    0,002    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true           1000              50  avgt  100    7923,882 ±   43,390  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true           1000              50  avgt  100  157316,703 ±  310,854    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true           1000              50  avgt  100       0,202 ±    0,027  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true           1000              50  avgt  100       4,020 ±    0,535    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true           1000              50  avgt  100    6782,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true           1000              50  avgt  100    6959,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                             true           1000             100  avgt  100   30223,658 ±  444,223   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                              true           1000             100  avgt  100    9154,754 ±  134,401  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                         true           1000             100  avgt  100  304093,605 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                     true           1000             100  avgt  100    9469,710 ±  139,237  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm                true           1000             100  avgt  100  314558,527 ±  542,281    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                        true           1000             100  avgt  100       0,339 ±    0,082  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                   true           1000             100  avgt  100      11,421 ±    2,813    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                   true           1000             100  avgt  100    8105,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                    true           1000             100  avgt  100    8400,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false             10               1  avgt  100      89,216 ±    0,203   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false             10               1  avgt  100    1954,568 ±    4,401  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false             10               1  avgt  100     192,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false             10               1  avgt  100    1959,362 ±   16,750  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false             10               1  avgt  100     192,471 ±    1,585    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false             10               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false             10               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false             10               1  avgt  100    1677,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false             10               1  avgt  100    1665,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false             10              10  avgt  100     112,233 ±    0,199   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false             10              10  avgt  100    5114,233 ±    8,997  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false             10              10  avgt  100     632,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false             10              10  avgt  100    5122,049 ±   15,630  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false             10              10  avgt  100     632,967 ±    1,620    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false             10              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false             10              10  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false             10              10  avgt  100    4384,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false             10              10  avgt  100    4282,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false             10              50  avgt  100     236,424 ±    2,618   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false             10              50  avgt  100   10156,415 ±   96,220  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false             10              50  avgt  100    2641,600 ±    4,008    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false             10              50  avgt  100   10189,381 ±   98,086  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false             10              50  avgt  100    2650,165 ±    5,566    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false             10              50  avgt  100       0,005 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false             10              50  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false             10              50  avgt  100    8721,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false             10              50  avgt  100    8578,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false             10             100  avgt  100     453,126 ±    2,636   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false             10             100  avgt  100   10299,775 ±   53,045  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false             10             100  avgt  100    5137,600 ±    4,008    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false             10             100  avgt  100   10324,825 ±   55,412  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false             10             100  avgt  100    5150,100 ±    9,061    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false             10             100  avgt  100       0,005 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false             10             100  avgt  100       0,003 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false             10             100  avgt  100    8837,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false             10             100  avgt  100    8859,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false            100               1  avgt  100     730,421 ±    1,348   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false            100               1  avgt  100    1233,442 ±    2,269  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false            100               1  avgt  100     992,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false            100               1  avgt  100    1236,003 ±   19,630  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false            100               1  avgt  100     994,062 ±   15,699    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false            100               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false            100               1  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space                false            100               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space.norm           false            100               1  avgt  100       0,015 ±    0,016    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false            100               1  avgt  100    1058,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false            100               1  avgt  100    1127,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false            100              10  avgt  100    1075,898 ±   14,767   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false            100              10  avgt  100    4643,381 ±   57,788  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false            100              10  avgt  100    5492,800 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false            100              10  avgt  100    4655,957 ±   62,046  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false            100              10  avgt  100    5507,479 ±   21,491    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false            100              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false            100              10  avgt  100       0,003 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false            100              10  avgt  100    3985,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false            100              10  avgt  100    4010,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false            100              50  avgt  100    2111,526 ±    8,492   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false            100              50  avgt  100   10965,088 ±   42,140  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false            100              50  avgt  100   25490,400 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false            100              50  avgt  100   11055,123 ±   45,660  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false            100              50  avgt  100   25699,693 ±   37,695    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false            100              50  avgt  100       0,022 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false            100              50  avgt  100       0,051 ±    0,005    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false            100              50  avgt  100    9462,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false            100              50  avgt  100    9530,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false            100             100  avgt  100    3682,299 ±    7,946   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false            100             100  avgt  100   12452,587 ±   26,536  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false            100             100  avgt  100   50488,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false            100             100  avgt  100   12615,983 ±   31,368  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false            100             100  avgt  100   51150,581 ±   74,366    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false            100             100  avgt  100       0,076 ±    0,003  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false            100             100  avgt  100       0,309 ±    0,014    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false            100             100  avgt  100   10798,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false            100             100  avgt  100   10953,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false           1000               1  avgt  100    7678,332 ±  108,961   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false           1000               1  avgt  100    1077,824 ±   14,592  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false           1000               1  avgt  100    9097,601 ±    4,008    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false           1000               1  avgt  100    1080,612 ±   24,144  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false           1000               1  avgt  100    9120,194 ±  155,476    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false           1000               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false           1000               1  avgt  100       0,007 ±    0,004    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space                false           1000               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Survivor_Space.norm           false           1000               1  avgt  100       0,161 ±    0,165    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false           1000               1  avgt  100     925,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false           1000               1  avgt  100    1030,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false           1000              10  avgt  100   10334,944 ±  127,424   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false           1000              10  avgt  100    4759,284 ±   55,600  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false           1000              10  avgt  100   54092,802 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false           1000              10  avgt  100    4805,455 ±   59,234  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false           1000              10  avgt  100   54616,004 ±  167,130    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false           1000              10  avgt  100       0,009 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false           1000              10  avgt  100       0,106 ±    0,024    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false           1000              10  avgt  100    4113,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false           1000              10  avgt  100    4160,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false           1000              50  avgt  100   23652,300 ±  101,435   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false           1000              50  avgt  100    9758,759 ±   41,963  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false           1000              50  avgt  100  254112,004 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false           1000              50  avgt  100   10065,493 ±   45,897  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false           1000              50  avgt  100  262099,211 ±  401,939    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false           1000              50  avgt  100       0,039 ±    0,009  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false           1000              50  avgt  100       1,024 ±    0,237    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false           1000              50  avgt  100    8615,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false           1000              50  avgt  100    8692,000                 ms
+StringBuilderVsStringChainBenchmark.stringChain                                            false           1000             100  avgt  100   40971,452 ±  110,758   ns/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate                             false           1000             100  avgt  100   11174,983 ±   30,193  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.alloc.rate.norm                        false           1000             100  avgt  100  504112,006 ±    0,005    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space                    false           1000             100  avgt  100   11622,785 ±   34,052  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Eden_Space.norm               false           1000             100  avgt  100  524313,594 ±  679,802    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen                       false           1000             100  avgt  100       0,046 ±    0,013  MB/sec
+StringBuilderVsStringChainBenchmark.stringChain:·gc.churn.G1_Old_Gen.norm                  false           1000             100  avgt  100       2,078 ±    0,574    B/op
+StringBuilderVsStringChainBenchmark.stringChain:·gc.count                                  false           1000             100  avgt  100    9948,000             counts
+StringBuilderVsStringChainBenchmark.stringChain:·gc.time                                   false           1000             100  avgt  100   10241,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true             10               1  avgt  100      74,701 ±    3,125   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true             10               1  avgt  100    2805,245 ±   65,602  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true             10               1  avgt  100     228,800 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true             10               1  avgt  100    2809,906 ±   66,252  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true             10               1  avgt  100     229,207 ±    3,564    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true             10               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true             10               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true             10               1  avgt  100    2405,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true             10               1  avgt  100    2359,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true             10              10  avgt  100      94,372 ±    0,275   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true             10              10  avgt  100    4696,580 ±   13,579  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true             10              10  avgt  100     488,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true             10              10  avgt  100    4706,187 ±   22,583  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true             10              10  avgt  100     488,999 ±    1,898    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true             10              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true             10              10  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true             10              10  avgt  100    4028,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true             10              10  avgt  100    3924,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true             10              50  avgt  100     170,927 ±    2,722   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true             10              50  avgt  100    9023,418 ±  119,473  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true             10              50  avgt  100    1695,200 ±    3,749    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true             10              50  avgt  100    9047,823 ±  119,912  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true             10              50  avgt  100    1699,813 ±    5,068    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true             10              50  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true             10              50  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true             10              50  avgt  100    7744,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true             10              50  avgt  100    7581,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true             10             100  avgt  100     311,730 ±   11,305   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true             10             100  avgt  100    9363,594 ±  260,656  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true             10             100  avgt  100    3186,400 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true             10             100  avgt  100    9400,689 ±  263,348  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true             10             100  avgt  100    3198,917 ±    7,258    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true             10             100  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true             10             100  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true             10             100  avgt  100    8046,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true             10             100  avgt  100    8239,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true            100               1  avgt  100     696,815 ±   39,196   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true            100               1  avgt  100    1914,450 ±   82,161  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true            100               1  avgt  100    1439,200 ±    3,749    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true            100               1  avgt  100    1920,192 ±   85,158  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true            100               1  avgt  100    1443,226 ±   14,857    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true            100               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true            100               1  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space          true            100               1  avgt  100       0,008 ±    0,013  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space.norm     true            100               1  avgt  100       0,007 ±    0,013    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true            100               1  avgt  100    1644,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true            100               1  avgt  100    1752,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true            100              10  avgt  100     857,387 ±   36,228   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true            100              10  avgt  100    4420,300 ±  134,295  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true            100              10  avgt  100    4128,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true            100              10  avgt  100    4439,601 ±  135,447  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true            100              10  avgt  100    4146,349 ±   16,281    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true            100              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true            100              10  avgt  100       0,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true            100              10  avgt  100    3800,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true            100              10  avgt  100    3936,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true            100              50  avgt  100    1658,223 ±   45,012   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true            100              50  avgt  100    8881,920 ±  199,837  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true            100              50  avgt  100   16132,800 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true            100              50  avgt  100    8951,971 ±  201,752  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true            100              50  avgt  100   16260,190 ±   29,077    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true            100              50  avgt  100       0,015 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true            100              50  avgt  100       0,026 ±    0,004    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true            100              50  avgt  100    7662,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true            100              50  avgt  100    7786,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true            100             100  avgt  100    3720,649 ±  219,708   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true            100             100  avgt  100    7815,399 ±  437,006  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true            100             100  avgt  100   31130,401 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true            100             100  avgt  100    7900,175 ±  440,925  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true            100             100  avgt  100   31469,330 ±   64,761    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true            100             100  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true            100             100  avgt  100       0,017 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true            100             100  avgt  100    6763,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true            100             100  avgt  100    7353,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true           1000               1  avgt  100    7913,330 ±  275,227   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true           1000               1  avgt  100    1314,404 ±   40,298  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true           1000               1  avgt  100   11348,801 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true           1000               1  avgt  100    1320,145 ±   44,893  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true           1000               1  avgt  100   11395,648 ±  143,130    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true           1000               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true           1000               1  avgt  100       0,011 ±    0,005    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space          true           1000               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space.norm     true           1000               1  avgt  100       0,170 ±    0,176    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true           1000               1  avgt  100    1130,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true           1000               1  avgt  100    1179,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true           1000              10  avgt  100    9503,217 ±  349,261   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true           1000              10  avgt  100    3696,012 ±  104,026  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true           1000              10  avgt  100   38344,009 ±    0,024    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true           1000              10  avgt  100    3744,544 ±  107,081  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true           1000              10  avgt  100   38843,651 ±  161,041    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true           1000              10  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true           1000              10  avgt  100       0,021 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true           1000              10  avgt  100    3205,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true           1000              10  avgt  100    3336,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true           1000              50  avgt  100   25112,926 ± 1248,928   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true           1000              50  avgt  100    5834,706 ±  256,994  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true           1000              50  avgt  100  158356,004 ±    4,090    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true           1000              50  avgt  100    5942,450 ±  264,355  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true           1000              50  avgt  100  161255,432 ±  476,467    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true           1000              50  avgt  100       0,007 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true           1000              50  avgt  100       0,188 ±    0,041    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true           1000              50  avgt  100    5087,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true           1000              50  avgt  100    5702,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                      true           1000             100  avgt  100   32521,701 ± 1143,594   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                       true           1000             100  avgt  100    8691,133 ±  265,159  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                  true           1000             100  avgt  100  308368,005 ±    0,004    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space              true           1000             100  avgt  100    8866,785 ±  270,338  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm         true           1000             100  avgt  100  314606,792 ±  560,039    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                 true           1000             100  avgt  100       0,394 ±    0,078  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm            true           1000             100  avgt  100      14,058 ±    2,761    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                            true           1000             100  avgt  100    7589,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                             true           1000             100  avgt  100    7858,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false             10               1  avgt  100     107,153 ±    4,450   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false             10               1  avgt  100    2260,154 ±   64,286  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false             10               1  avgt  100     264,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false             10               1  avgt  100    2268,896 ±   65,509  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false             10               1  avgt  100     265,099 ±    2,077    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false             10               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false             10               1  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false             10               1  avgt  100    1942,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false             10               1  avgt  100    1984,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false             10              10  avgt  100     132,424 ±    5,788   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false             10              10  avgt  100    4882,930 ±  149,060  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false             10              10  avgt  100     704,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false             10              10  avgt  100    4889,489 ±  151,430  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false             10              10  avgt  100     704,886 ±    2,318    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false             10              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false             10              10  avgt  100      ? 10??               B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false             10              10  avgt  100    4185,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false             10              10  avgt  100    4189,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false             10              50  avgt  100     380,708 ±   48,707   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false             10              50  avgt  100    7168,496 ±  673,753  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false             10              50  avgt  100    2708,800 ±    3,272    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false             10              50  avgt  100    7194,520 ±  676,060  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false             10              50  avgt  100    2718,768 ±    8,706    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false             10              50  avgt  100       0,004 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false             10              50  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false             10              50  avgt  100    6159,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false             10              50  avgt  100    6388,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false             10             100  avgt  100     518,155 ±   16,123   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false             10             100  avgt  100    9179,337 ±  246,990  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false             10             100  avgt  100    5200,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false             10             100  avgt  100    9210,568 ±  247,588  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false             10             100  avgt  100    5217,737 ±    8,910    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false             10             100  avgt  100       0,005 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false             10             100  avgt  100       0,003 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false             10             100  avgt  100    7884,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false             10             100  avgt  100    8312,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false            100               1  avgt  100     894,987 ±   13,448   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false            100               1  avgt  100    1675,344 ±   23,496  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false            100               1  avgt  100    1648,000 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false            100               1  avgt  100    1678,940 ±   27,966  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false            100               1  avgt  100    1651,523 ±   14,792    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false            100               1  avgt  100       0,002 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false            100               1  avgt  100       0,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space         false            100               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space.norm    false            100               1  avgt  100       0,019 ±    0,019    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false            100               1  avgt  100    1437,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false            100               1  avgt  100    1479,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false            100              10  avgt  100    1274,628 ±   43,871   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false            100              10  avgt  100    4419,117 ±  118,880  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false            100              10  avgt  100    6153,600 ±    4,008    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false            100              10  avgt  100    4433,671 ±  119,569  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false            100              10  avgt  100    6174,439 ±   25,232    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false            100              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false            100              10  avgt  100       0,004 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false            100              10  avgt  100    3795,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false            100              10  avgt  100    3869,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false            100              50  avgt  100    2392,711 ±   71,251   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false            100              50  avgt  100    9985,708 ±  241,898  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false            100              50  avgt  100   26146,400 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false            100              50  avgt  100   10013,040 ±  244,116  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false            100              50  avgt  100   26217,337 ±   41,848    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false            100              50  avgt  100       0,026 ±    0,002  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false            100              50  avgt  100       0,068 ±    0,006    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false            100              50  avgt  100    8570,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false            100              50  avgt  100    8835,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false            100             100  avgt  100    4134,892 ±   75,064   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false            100             100  avgt  100   11263,190 ±  190,865  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false            100             100  avgt  100   51146,401 ±    2,454    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false            100             100  avgt  100   11317,541 ±  193,961  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false            100             100  avgt  100   51392,164 ±   75,936    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false            100             100  avgt  100       0,006 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false            100             100  avgt  100       0,028 ±    0,004    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false            100             100  avgt  100    9687,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false            100             100  avgt  100   10240,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false           1000               1  avgt  100    9036,196 ±  153,548   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false           1000               1  avgt  100    1345,960 ±   22,049  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false           1000               1  avgt  100   13360,001 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false           1000               1  avgt  100    1349,392 ±   27,808  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false           1000               1  avgt  100   13393,831 ±  164,442    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false           1000               1  avgt  100       0,001 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false           1000               1  avgt  100       0,013 ±    0,006    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space         false           1000               1  avgt  100       0,019 ±    0,019  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Survivor_Space.norm    false           1000               1  avgt  100       0,196 ±    0,201    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false           1000               1  avgt  100    1155,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false           1000               1  avgt  100    1325,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false           1000              10  avgt  100   11816,327 ±  238,459   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false           1000              10  avgt  100    4499,812 ±   83,247  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false           1000              10  avgt  100   58360,002 ±    0,001    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false           1000              10  avgt  100    4526,233 ±   85,895  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false           1000              10  avgt  100   58702,021 ±  226,239    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false           1000              10  avgt  100       0,003 ±    0,001  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false           1000              10  avgt  100       0,035 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false           1000              10  avgt  100    3874,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false           1000              10  avgt  100    4032,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false           1000              50  avgt  100   26371,053 ±  619,403   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false           1000              50  avgt  100    8936,787 ±  190,998  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false           1000              50  avgt  100  258384,004 ±    0,003    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false           1000              50  avgt  100    9065,399 ±  195,131  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false           1000              50  avgt  100  262098,324 ±  466,295    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false           1000              50  avgt  100       0,228 ±    0,005  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false           1000              50  avgt  100       6,587 ±    0,039    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false           1000              50  avgt  100    7759,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false           1000              50  avgt  100    7938,000                 ms
+StringBuilderVsStringChainBenchmark.stringChainDefault                                     false           1000             100  avgt  100   47135,220 ± 1063,414   ns/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate                      false           1000             100  avgt  100    9834,356 ±  202,111  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.alloc.rate.norm                 false           1000             100  avgt  100  508384,007 ±    0,005    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space             false           1000             100  avgt  100   10143,601 ±  210,021  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Eden_Space.norm        false           1000             100  avgt  100  524363,908 ±  861,676    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen                false           1000             100  avgt  100       0,164 ±    0,038  MB/sec
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.churn.G1_Old_Gen.norm           false           1000             100  avgt  100       8,539 ±    2,017    B/op
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.count                           false           1000             100  avgt  100    8682,000             counts
+StringBuilderVsStringChainBenchmark.stringChainDefault:·gc.time                            false           1000             100  avgt  100    9339,000                 ms
