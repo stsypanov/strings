@@ -21,6 +21,10 @@ ext {
   jupiterVersion = "5.3.2"
 }
 
+//compileJava {
+//  options.compilerArgs += ["-XDstringConcat=inline"]
+//}
+
 dependencies {
   compile("org.openjdk.jmh:jmh-core:${jvmVersion}")
   compile("org.apache.commons:commons-lang3:3.7")
@@ -30,3 +34,7 @@ dependencies {
   testCompile("org.junit.jupiter:junit-jupiter-api:${jupiterVersion}")
   testCompile("org.junit.jupiter:junit-jupiter-params:${jupiterVersion}")
 }
+
+//tasks.withType(JavaCompile) {
+//  println 'Compiler args: ' + options.compilerArgs.toString();
+//}
