@@ -1,0 +1,49 @@
+Benchmark                                                          Mode  Cnt     Score     Error   Units
+ChainedAppendBenchmark.chainedAppend                               avgt  100    33,973 ±   0,974   ns/op
+ChainedAppendBenchmark.chainedAppend:·gc.alloc.rate                avgt  100  2580,669 ±  58,243  MB/sec
+ChainedAppendBenchmark.chainedAppend:·gc.alloc.rate.norm           avgt  100    96,000 ±   0,001    B/op
+ChainedAppendBenchmark.chainedAppend:·gc.churn.G1_Eden_Space       avgt  100  2586,798 ±  60,937  MB/sec
+ChainedAppendBenchmark.chainedAppend:·gc.churn.G1_Eden_Space.norm  avgt  100    96,217 ±   0,487    B/op
+ChainedAppendBenchmark.chainedAppend:·gc.churn.G1_Old_Gen          avgt  100     0,001 ±   0,001  MB/sec
+ChainedAppendBenchmark.chainedAppend:·gc.churn.G1_Old_Gen.norm     avgt  100    ≈ 10⁻⁴              B/op
+ChainedAppendBenchmark.chainedAppend:·gc.count                     avgt  100  2214,000            counts
+ChainedAppendBenchmark.chainedAppend:·gc.time                      avgt  100  2191,000                ms
+ChainedAppendBenchmark.concatenation                               avgt  100    36,189 ±   1,260   ns/op
+ChainedAppendBenchmark.concatenation:·gc.alloc.rate                avgt  100  2429,826 ±  69,540  MB/sec
+ChainedAppendBenchmark.concatenation:·gc.alloc.rate.norm           avgt  100    96,000 ±   0,001    B/op
+ChainedAppendBenchmark.concatenation:·gc.churn.G1_Eden_Space       avgt  100  2433,696 ±  71,064  MB/sec
+ChainedAppendBenchmark.concatenation:·gc.churn.G1_Eden_Space.norm  avgt  100    96,156 ±   0,630    B/op
+ChainedAppendBenchmark.concatenation:·gc.churn.G1_Old_Gen          avgt  100     0,001 ±   0,001  MB/sec
+ChainedAppendBenchmark.concatenation:·gc.churn.G1_Old_Gen.norm     avgt  100    ≈ 10⁻⁴              B/op
+ChainedAppendBenchmark.concatenation:·gc.count                     avgt  100  2083,000            counts
+ChainedAppendBenchmark.concatenation:·gc.time                      avgt  100  2196,000                ms
+ChainedAppendBenchmark.newLineAppend                               avgt  100    71,083 ±   5,180   ns/op
+ChainedAppendBenchmark.newLineAppend:·gc.alloc.rate                avgt  100  3571,554 ± 164,209  MB/sec
+ChainedAppendBenchmark.newLineAppend:·gc.alloc.rate.norm           avgt  100   272,000 ±   0,001    B/op
+ChainedAppendBenchmark.newLineAppend:·gc.churn.G1_Eden_Space       avgt  100  3577,500 ± 164,338  MB/sec
+ChainedAppendBenchmark.newLineAppend:·gc.churn.G1_Eden_Space.norm  avgt  100   272,524 ±   1,257    B/op
+ChainedAppendBenchmark.newLineAppend:·gc.churn.G1_Old_Gen          avgt  100     0,002 ±   0,001  MB/sec
+ChainedAppendBenchmark.newLineAppend:·gc.churn.G1_Old_Gen.norm     avgt  100    ≈ 10⁻⁴              B/op
+ChainedAppendBenchmark.newLineAppend:·gc.count                     avgt  100  3062,000            counts
+ChainedAppendBenchmark.newLineAppend:·gc.time                      avgt  100  3284,000                ms
+ChainedAppendBenchmark.tornAppend                                  avgt  100    66,261 ±   2,095   ns/op
+ChainedAppendBenchmark.tornAppend:·gc.alloc.rate                   avgt  100  3755,777 ± 102,467  MB/sec
+ChainedAppendBenchmark.tornAppend:·gc.alloc.rate.norm              avgt  100   272,000 ±   0,001    B/op
+ChainedAppendBenchmark.tornAppend:·gc.churn.G1_Eden_Space          avgt  100  3758,581 ± 105,160  MB/sec
+ChainedAppendBenchmark.tornAppend:·gc.churn.G1_Eden_Space.norm     avgt  100   272,182 ±   1,264    B/op
+ChainedAppendBenchmark.tornAppend:·gc.churn.G1_Old_Gen             avgt  100     0,002 ±   0,001  MB/sec
+ChainedAppendBenchmark.tornAppend:·gc.churn.G1_Old_Gen.norm        avgt  100    ≈ 10⁻⁴              B/op
+ChainedAppendBenchmark.tornAppend:·gc.count                        avgt  100  3217,000            counts
+ChainedAppendBenchmark.tornAppend:·gc.time                         avgt  100  3403,000                ms
+
+
+Benchmark                                                          Mode  Cnt     Score     Error   Units
+ChainedAppendBenchmark.chainedAppend                               avgt  100    33,973 ±   0,974   ns/op
+ChainedAppendBenchmark.concatenation                               avgt  100    36,189 ±   1,260   ns/op
+ChainedAppendBenchmark.newLineAppend                               avgt  100    71,083 ±   5,180   ns/op
+ChainedAppendBenchmark.tornAppend                                  avgt  100    66,261 ±   2,095   ns/op
+
+ChainedAppendBenchmark.chainedAppend:·gc.alloc.rate.norm           avgt  100    96,000 ±   0,001    B/op
+ChainedAppendBenchmark.concatenation:·gc.alloc.rate.norm           avgt  100    96,000 ±   0,001    B/op
+ChainedAppendBenchmark.newLineAppend:·gc.alloc.rate.norm           avgt  100   272,000 ±   0,001    B/op
+ChainedAppendBenchmark.tornAppend:·gc.alloc.rate.norm              avgt  100   272,000 ±   0,001    B/op
