@@ -38,3 +38,15 @@ dependencies {
 //tasks.withType(JavaCompile) {
 //  println 'Compiler args: ' + options.compilerArgs.toString();
 //}
+
+ext.moduleName = 'spring-data-examples'
+
+compileJava {
+  inputs.property('moduleName', moduleName)
+  doFirst {
+    options.compilerArgs = [
+            '--module-path', classpath.asPath
+    ]
+    classpath = files()
+  }
+}
