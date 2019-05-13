@@ -14,7 +14,7 @@ tasks.withType(JavaCompile) {
 
 repositories {
   mavenLocal()
-  maven { url "http://repo.maven.apache.org/maven2" }
+  mavenCentral()
 }
 
 ext {
@@ -28,7 +28,7 @@ ext {
 
 dependencies {
   compile("org.openjdk.jmh:jmh-core:${jvmVersion}")
-  compile("org.apache.commons:commons-lang3:3.7")
+  compile("org.apache.commons:commons-lang3:3.8.1")
   compile("org.springframework:spring-core:5.1.2.RELEASE")
   compileOnly("org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}")
   annotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}")
