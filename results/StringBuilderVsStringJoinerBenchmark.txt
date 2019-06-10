@@ -1,34 +1,35 @@
 JDK11
 
-Benchmark                              latin    length  stringLength  Mode  Cnt      Score      Error   Units
-stringBuilder                           true        10            10  avgt   25    122,249 ±    5,062   ns/op
-stringBuilder                           true       100            10  avgt   25    463,513 ±   42,626   ns/op
-stringBuilder                           true      1000            10  avgt   25   3446,647 ±  109,185   ns/op
+Benchmark                              latin    length     count  Mode  Cnt      Score      Error   Units
 
-stringJoiner                            true        10            10  avgt   25    141,124 ±    5,372   ns/op
-stringJoiner                            true       100            10  avgt   25    356,000 ±    6,959   ns/op
-stringJoiner                            true      1000            10  avgt   25   2522,112 ±  287,717   ns/op
+stringBuilder                           true        10        10  avgt   25    122,249 ±    5,062   ns/op
+stringBuilder                           true       100        10  avgt   25    463,513 ±   42,626   ns/op
+stringBuilder                           true      1000        10  avgt   25   3446,647 ±  109,185   ns/op
 
-stringBuilder                          false        10            10  avgt   25    229,850 ±   14,746   ns/op
-stringBuilder                          false       100            10  avgt   25    932,492 ±    8,765   ns/op
-stringBuilder                          false      1000            10  avgt   25   7456,491 ±  527,290   ns/op
+stringJoiner                            true        10        10  avgt   25    141,124 ±    5,372   ns/op
+stringJoiner                            true       100        10  avgt   25    356,000 ±    6,959   ns/op
+stringJoiner                            true      1000        10  avgt   25   2522,112 ±  287,717   ns/op
 
-stringJoiner                           false        10            10  avgt   25    192,672 ±   70,830   ns/op
-stringJoiner                           false       100            10  avgt   25    577,794 ±   60,361   ns/op
-stringJoiner                           false      1000            10  avgt   25   3541,972 ±  135,021   ns/op
+stringBuilder                          false        10        10  avgt   25    229,850 ±   14,746   ns/op
+stringBuilder                          false       100        10  avgt   25    932,492 ±    8,765   ns/op
+stringBuilder                          false      1000        10  avgt   25   7456,491 ±  527,290   ns/op
 
-stringBuilder:·gc.alloc.rate.norm       true        10            10  avgt   25    512,000 ±    0,001    B/op
-stringBuilder:·gc.alloc.rate.norm       true       100            10  avgt   25   4376,000 ±    0,001    B/op
-stringBuilder:·gc.alloc.rate.norm       true      1000            10  avgt   25  41280,001 ±    0,001    B/op
+stringJoiner                           false        10        10  avgt   25    192,672 ±   70,830   ns/op
+stringJoiner                           false       100        10  avgt   25    577,794 ±   60,361   ns/op
+stringJoiner                           false      1000        10  avgt   25   3541,972 ±  135,021   ns/op
 
-stringJoiner:·gc.alloc.rate.norm        true        10            10  avgt   25    536,000 ±   14,982    B/op
-stringJoiner:·gc.alloc.rate.norm        true       100            10  avgt   25   3232,000 ±   12,232    B/op
-stringJoiner:·gc.alloc.rate.norm        true      1000            10  avgt   25  30232,001 ±   12,232    B/op
+stringBuilder:·gc.alloc.rate.norm       true        10        10  avgt   25    512,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm       true       100        10  avgt   25   4376,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm       true      1000        10  avgt   25  41280,001 ±    0,001    B/op
 
-stringBuilder:·gc.alloc.rate.norm      false        10            10  avgt   25   1083,200 ±    7,339    B/op
-stringBuilder:·gc.alloc.rate.norm      false       100            10  avgt   25   9744,000 ±    0,001    B/op
-stringBuilder:·gc.alloc.rate.norm      false      1000            10  avgt   25  93448,002 ±    0,001    B/op
+stringJoiner:·gc.alloc.rate.norm        true        10        10  avgt   25    536,000 ±   14,982    B/op
+stringJoiner:·gc.alloc.rate.norm        true       100        10  avgt   25   3232,000 ±   12,232    B/op
+stringJoiner:·gc.alloc.rate.norm        true      1000        10  avgt   25  30232,001 ±   12,232    B/op
 
-stringJoiner:·gc.alloc.rate.norm       false        10            10  avgt   25    768,000 ±   12,232    B/op
-stringJoiner:·gc.alloc.rate.norm       false       100            10  avgt   25   5264,000 ±    0,001    B/op
-stringJoiner:·gc.alloc.rate.norm       false      1000            10  avgt   25  50264,001 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm      false        10        10  avgt   25   1083,200 ±    7,339    B/op
+stringBuilder:·gc.alloc.rate.norm      false       100        10  avgt   25   9744,000 ±    0,001    B/op
+stringBuilder:·gc.alloc.rate.norm      false      1000        10  avgt   25  93448,002 ±    0,001    B/op
+
+stringJoiner:·gc.alloc.rate.norm       false        10        10  avgt   25    768,000 ±   12,232    B/op
+stringJoiner:·gc.alloc.rate.norm       false       100        10  avgt   25   5264,000 ±    0,001    B/op
+stringJoiner:·gc.alloc.rate.norm       false      1000        10  avgt   25  50264,001 ±    0,001    B/op

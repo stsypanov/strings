@@ -44,7 +44,7 @@ public class StringBuilderVsStringJoinerBenchmark {
     private int length;
 
     @Param("10")
-    private int stringLength;
+    private int count;
 
     private String[] stringArray;
 
@@ -52,13 +52,13 @@ public class StringBuilderVsStringJoinerBenchmark {
     public void setup() {
       RandomStringGenerator generator = new RandomStringGenerator();
 
-      stringArray = new String[stringLength];
+      stringArray = new String[count];
 
       String alphabet = latin
               ? "abcdefghijklmnopqrstuvwxyz"        //English
               : "абвгдеёжзиклмнопрстуфхцчшщьыъэюя"; //Russian
 
-      for (int i = 0; i < stringLength; i++) {
+      for (int i = 0; i < count; i++) {
         String string = generator.randomString(alphabet, length);
         stringArray[i] = string;
       }
