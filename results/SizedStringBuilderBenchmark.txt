@@ -1,0 +1,21 @@
+
+JDK 11
+
+SizedStringBuilderBenchmark.original                                   avgt   50        154,692 ±       3,339   ms/op
+SizedStringBuilderBenchmark.patched                                    avgt   50        129,732 ±       3,520   ms/op
+SizedStringBuilderBenchmark.chars                                      avgt   50         53,144 ±       2,346   ms/op
+
+SizedStringBuilderBenchmark.original:·gc.alloc.rate.norm               avgt   50  192938406,678 ±       0,205    B/op
+SizedStringBuilderBenchmark.patched:·gc.alloc.rate.norm                avgt   50   83886165,568 ±       0,200    B/op
+SizedStringBuilderBenchmark.chars:·gc.alloc.rate.norm                  avgt   50  125829178,305 ±       0,121    B/op
+
+JDK 12 eap
+
+Benchmark                                                              Mode  Cnt          Score        Error   Units
+SizedStringBuilderBenchmark.original                                   avgt   50        150,059 ±      3,712   ms/op
+SizedStringBuilderBenchmark.patched                                    avgt   50        119,476 ±      0,085   ms/op
+SizedStringBuilderBenchmark.chars                                      avgt   50         60,723 ±      2,415   ms/op
+
+SizedStringBuilderBenchmark.original:·gc.alloc.rate.norm               avgt   50  192938406,649 ±      0,268    B/op
+SizedStringBuilderBenchmark.patched:·gc.alloc.rate.norm                avgt   50   83886165,299 ±      0,163    B/op
+SizedStringBuilderBenchmark.chars:·gc.alloc.rate.norm                  avgt   50  125829178,594 ±      0,100    B/op
