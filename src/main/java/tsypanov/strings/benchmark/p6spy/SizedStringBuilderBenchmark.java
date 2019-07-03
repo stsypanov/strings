@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
-@Fork(jvmArgsAppend = {"-XX:+UseParallelGC", "-Xms2g", "-Xmx2g"})
+@Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
 public class SizedStringBuilderBenchmark {
 
   private byte[] bytes;
