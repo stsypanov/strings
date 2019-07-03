@@ -1,0 +1,18 @@
+JDK 8
+
+Benchmark                                   Mode  Cnt     Score     Error   Units
+equalsIgnoreCase                            avgt   50    33,683 ±   1,826   ns/op
+toLowerCaseEquals                           avgt   50    70,291 ±  10,263   ns/op
+
+equalsIgnoreCase:·gc.alloc.rate.norm        avgt   50    ≈ 10⁻⁶              B/op
+toLowerCaseEquals:·gc.alloc.rate.norm       avgt   50   104,000 ±   0,001    B/op
+
+
+JDK 11
+
+Benchmark                                   Mode  Cnt     Score    Error   Units
+equalsIgnoreCase                            avgt   50    48,220 ±  2,552   ns/op
+toLowerCaseEquals                           avgt   50    28,912 ±  1,267   ns/op
+
+equalsIgnoreCase:·gc.alloc.rate.norm        avgt   50    ≈ 10⁻⁶             B/op
+toLowerCaseEquals:·gc.alloc.rate.norm       avgt   50    56,000 ±  0,001    B/op
