@@ -1,3 +1,13 @@
+JDK 8
+
+Benchmark                                                              Mode  Cnt          Score         Error   Units
+SizedStringBuilderBenchmark.original                                   avgt   50        124,743 ±       5,071   ms/op
+SizedStringBuilderBenchmark.patched                                    avgt   50         90,654 ±       5,240   ms/op
+SizedStringBuilderBenchmark.chars                                      avgt   50         41,937 ±       5,444   ms/op
+
+SizedStringBuilderBenchmark.original:·gc.alloc.rate.norm               avgt   50  385876341,670 ±       0,257    B/op
+SizedStringBuilderBenchmark.patched:·gc.alloc.rate.norm                avgt   50  167772220,105 ±       0,263    B/op
+SizedStringBuilderBenchmark.chars:·gc.alloc.rate.norm                  avgt   50  167772217,894 ±       0,235    B/op
 
 JDK 11
 
