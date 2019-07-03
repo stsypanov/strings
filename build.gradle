@@ -27,14 +27,14 @@ ext {
 //}
 
 dependencies {
-  implementation("org.openjdk.jmh:jmh-core:${jvmVersion}")
-  implementation("org.apache.commons:commons-lang3:3.8.1")
-  implementation("org.springframework:spring-core:5.1.2.RELEASE")
-  compileOnly("org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}")
-  annotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}")
+  implementation "org.openjdk.jmh:jmh-core:${jvmVersion}"
+  implementation "org.apache.commons:commons-lang3:3.8.1"
+  implementation "org.springframework:spring-core:5.1.2.RELEASE"
+  compileOnly "org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}"
+  annotationProcessor "org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}"
 
-  testImplementation("org.junit.jupiter:junit-jupiter-api:${jupiterVersion}")
-  testImplementation("org.junit.jupiter:junit-jupiter-params:${jupiterVersion}")
+  testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
+  testImplementation "org.junit.jupiter:junit-jupiter-params:${jupiterVersion}"
 }
 
 //tasks.withType(JavaCompile) {
