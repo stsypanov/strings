@@ -1,0 +1,5 @@
+createInvocationTraceName                               avgt   50   217,443 ±  18,256   ns/op
+patchedCreateInvocationTraceName                        avgt   50   152,876 ±   5,642   ns/op
+
+createInvocationTraceName:·gc.alloc.rate.norm           avgt   50   312,000 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.alloc.rate.norm    avgt   50   200,000 ±   0,001    B/op
