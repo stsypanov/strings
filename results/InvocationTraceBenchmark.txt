@@ -1,5 +1,20 @@
-createInvocationTraceName                               avgt   50   217,443 ±  18,256   ns/op
-patchedCreateInvocationTraceName                        avgt   50   152,876 ±   5,642   ns/op
+Benchmark                                                          Mode  Cnt     Score     Error   Units
+createInvocationTraceName                                          avgt   20    87,983 ±   3,513   ns/op
+createInvocationTraceName:·gc.alloc.rate                           avgt   20  8356,096 ± 308,611  MB/sec
+createInvocationTraceName:·gc.alloc.rate.norm                      avgt   20   808,000 ±   0,001    B/op
+createInvocationTraceName:·gc.churn.PS_Eden_Space                  avgt   20  8355,401 ± 303,976  MB/sec
+createInvocationTraceName:·gc.churn.PS_Eden_Space.norm             avgt   20   807,958 ±   2,404    B/op
+createInvocationTraceName:·gc.churn.PS_Survivor_Space              avgt   20     0,122 ±   0,013  MB/sec
+createInvocationTraceName:·gc.churn.PS_Survivor_Space.norm         avgt   20     0,012 ±   0,002    B/op
+createInvocationTraceName:·gc.count                                avgt   20  2964,000            counts
+createInvocationTraceName:·gc.time                                 avgt   20  1778,000                ms
 
-createInvocationTraceName:·gc.alloc.rate.norm           avgt   50   312,000 ±   0,001    B/op
-patchedCreateInvocationTraceName:·gc.alloc.rate.norm    avgt   50   200,000 ±   0,001    B/op
+patchedCreateInvocationTraceName                                   avgt   20    21,902 ±   0,773   ns/op
+patchedCreateInvocationTraceName:·gc.alloc.rate                    avgt   20  9302,710 ± 317,268  MB/sec
+patchedCreateInvocationTraceName:·gc.alloc.rate.norm               avgt   20   224,000 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space           avgt   20  9300,457 ± 317,797  MB/sec
+patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space.norm      avgt   20   223,946 ±   0,567    B/op
+patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space       avgt   20     0,051 ±   0,012  MB/sec
+patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space.norm  avgt   20     0,001 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.count                         avgt   20  2982,000            counts
+patchedCreateInvocationTraceName:·gc.time                          avgt   20  1782,000                ms

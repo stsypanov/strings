@@ -1,12 +1,6 @@
 package tsypanov.strings.benchmark.concatenation;
 
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.Fork;
-import org.openjdk.jmh.annotations.Mode;
-import org.openjdk.jmh.annotations.OutputTimeUnit;
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.*;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
@@ -16,49 +10,67 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
 public class InvocationTraceBenchmark {
-  private final MethodInvocation invocation = new MethodInvocation();
 
   @Benchmark
-  public String createInvocationTraceName() throws Exception {
-    MethodInvocation invocation = this.invocation;
-    StringBuilder sb = new StringBuilder(getPrefix());
+  public String createInvocationTraceName(Data data) {
+    MethodInvocation invocation = data.invocation;
+    StringBuilder sb = new StringBuilder(invocation.getPrefix());
     Method method = invocation.getMethod();
     Class<?> clazz = method.getDeclaringClass();
     if (clazz.isInstance(invocation.getThis())) {
       clazz = invocation.getThis().getClass();
     }
     sb.append(clazz.getName());
-    sb.append('.').append(method.getName());
-    sb.append(getSuffix());
+    sb.append('.');
+    sb.append(method.getName());
+    sb.append(invocation.getSuffix());
     return sb.toString();
   }
 
   @Benchmark
-  public String patchedCreateInvocationTraceName() throws Exception {
-    MethodInvocation invocation = this.invocation;
+  public String patchedCreateInvocationTraceName(Data data) {
+    MethodInvocation invocation = data.invocation;
     Method method = invocation.getMethod();
     Class<?> clazz = method.getDeclaringClass();
     if (clazz.isInstance(invocation.getThis())) {
       clazz = invocation.getThis().getClass();
     }
-    return getPrefix() + clazz.getName() + '.' + method.getName() + getSuffix();
+    // вклеивание переменной ломает улучшенную склейку строк, см. BrokenConcatenationBenchmark
+    final String name = clazz.getName();
+    return invocation.getPrefix() + name + '.' + method.getName() + invocation.getSuffix();
   }
 
-  private String getSuffix() {
-    return "";
-  }
-
-  private String getPrefix() {
-    return "";
+  @State(Scope.Thread)
+  public static class Data {
+    private final MethodInvocation invocation = new MethodInvocation();
   }
 
   private static class MethodInvocation {
-    Method getMethod() throws Exception {
-      return this.getClass().getMethod("toString");
+    private final Method method;
+
+    private MethodInvocation() {
+      try {
+        method = this.getClass().getMethod("toString");
+      } catch (Exception e) {
+        throw new Error(e);
+      }
+    }
+
+    public Method getMethod() {
+      return method;
     }
 
     Object getThis() {
-      return new Object();
+      return this;
     }
+
+    private String getSuffix() {
+      return "";
+    }
+
+    private String getPrefix() {
+      return "";
+    }
+
   }
 }
