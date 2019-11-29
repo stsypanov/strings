@@ -1,27 +1,57 @@
 package tsypanov.strings.source.string;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 public class IndexOfTest {
 
-  @Test
-  void noSlash() {
-    final String name = "no-slash";
-    assert conventional(name) == improved(name);
+  @ParameterizedTest
+  @MethodSource("testArguments")
+  void noSlash(String name, int from) {
+    int conventional = conventional(name, from);
+    int improved = improved(name, from);
+    assert conventional == improved || conventional < 0 && improved < 0;
   }
 
-  @Test
-  void slash() {
-    final String name = "has/slash";
-    assert conventional(name) != improved(name);
+  private int conventional(String name, int from) {
+    return name.substring(from).indexOf('/');
   }
 
-  private int conventional(final String name) {
-    return name.substring(2).indexOf('/');
+  private int improved(String name, int from) {
+    return name.indexOf('/') - from;
   }
 
-  private int improved(final String name) {
-    return name.indexOf('/', 2);
-  }
+  static Stream<Arguments> testArguments() {
+    return Stream.of(
+            Arguments.of("no-slash", 0),
+            Arguments.of("no-slash", 0),
+            Arguments.of("no-slash", 1),
+            Arguments.of("no-slash", 1),
+            Arguments.of("no-slash", 2),
+            Arguments.of("no-slash", 2),
+            Arguments.of("no-slash", 3),
+            Arguments.of("no-slash", 3),
+            Arguments.of("no-slash", 4),
+            Arguments.of("no-slash", 4),
+            Arguments.of("no-slash", 5),
+            Arguments.of("no-slash", 5),
 
+            Arguments.of("has/slash", 0),
+            Arguments.of("has/slash", 0),
+            Arguments.of("has/slash", 1),
+            Arguments.of("has/slash", 1),
+            Arguments.of("has/slash", 2),
+            Arguments.of("has/slash", 2),
+            Arguments.of("has/slash", 3),
+            Arguments.of("has/slash", 3),
+            Arguments.of("has/slash", 4),
+            Arguments.of("has/slash", 4),
+            Arguments.of("has/slash", 5),
+            Arguments.of("has/slash", 5)
+
+    );
+  }
 }
