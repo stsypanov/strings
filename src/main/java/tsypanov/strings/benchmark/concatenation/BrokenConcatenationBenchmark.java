@@ -29,7 +29,7 @@ public class BrokenConcatenationBenchmark {
 
   @State(Scope.Thread)
   public static class Data {
-    Class<? extends Data> clazz = getClass();
+    final Class<? extends Data> clazz = getClass();
 
     @Setup
     public void setup() {
