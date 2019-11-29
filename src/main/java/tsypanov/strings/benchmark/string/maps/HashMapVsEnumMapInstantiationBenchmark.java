@@ -17,7 +17,7 @@ public class HashMapVsEnumMapInstantiationBenchmark {
 
   @Benchmark
   public Object hashMap() {
-    var map = new HashMap<>();
+    HashMap<String, Integer> map = new HashMap<>();
     map.put(Constants.MarginLeft, 1);
     map.put(Constants.MarginRight, 2);
     map.put(Constants.MarginTop, 3);
@@ -27,7 +27,7 @@ public class HashMapVsEnumMapInstantiationBenchmark {
 
   @Benchmark
   public Object enumMap() {
-    var map = new EnumMap<>(ConstantsEnum.class);
+    EnumMap<ConstantsEnum, Integer> map = new EnumMap<>(ConstantsEnum.class);
     map.put(ConstantsEnum.MarginLeft, 1);
     map.put(ConstantsEnum.MarginRight, 2);
     map.put(ConstantsEnum.MarginTop, 3);

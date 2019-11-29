@@ -22,7 +22,6 @@ import java.util.concurrent.TimeUnit;
 public class HashMapVsEnumMapIterationBenchmark {
 
   @Benchmark
-  @SuppressWarnings("ALL")
   public void hashMap(Data data, Blackhole bh) {
     Map<String, Integer> map = data.hashMap;
     Set<String> keys = map.keySet();
@@ -32,7 +31,6 @@ public class HashMapVsEnumMapIterationBenchmark {
   }
 
   @Benchmark
-  @SuppressWarnings("ALL")
   public void enumMap(Data data, Blackhole bh) {
     Map<ConstantsEnum, Integer> map = data.enumMap;
     Set<ConstantsEnum> keys = map.keySet();
@@ -49,13 +47,13 @@ public class HashMapVsEnumMapIterationBenchmark {
     @Setup
     @SuppressWarnings("ALL")
     public void setup() {
-      var hashMap = new HashMap<String, Integer>();
+      HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
       hashMap.put(Constants.MarginLeft, 1);
       hashMap.put(Constants.MarginRight, 2);
       hashMap.put(Constants.MarginTop, 3);
       hashMap.put(Constants.MarginBottom, 4);
 
-      var enumMap = new EnumMap<ConstantsEnum, Integer>(ConstantsEnum.class);
+      EnumMap<ConstantsEnum, Integer> enumMap = new EnumMap<ConstantsEnum, Integer>(ConstantsEnum.class);
       enumMap.put(ConstantsEnum.MarginLeft, 1);
       enumMap.put(ConstantsEnum.MarginRight, 2);
       enumMap.put(ConstantsEnum.MarginTop, 3);
