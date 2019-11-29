@@ -151,6 +151,7 @@ public class StringChain {
    * @return the length of the current value of {@code StringChain}
    */
   public int length() {
+    //todo just return len; ?
     return size == 0 ? 0 : len;
   }
 
