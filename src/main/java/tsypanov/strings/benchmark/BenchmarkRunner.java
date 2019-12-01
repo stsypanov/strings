@@ -1,5 +1,8 @@
 package tsypanov.strings.benchmark;
 
+import tsypanov.strings.benchmark.concatenation.ArrayAllocationEliminationBenchmark;
+import tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark;
+import tsypanov.strings.benchmark.concatenation.InvocationTraceBenchmark;
 import tsypanov.strings.benchmark.string.CharacterReplaceBenchmark;
 import org.openjdk.jmh.profile.GCProfiler;
 import org.openjdk.jmh.runner.Runner;
@@ -16,25 +19,29 @@ public class BenchmarkRunner {
 //            .include(SaveAndFlushBenchmark.class.getSimpleName())
 //            .include(FieldReflectorKeyBenchmark.class.getSimpleName())
 //            .include(ChainedAppendBenchmark.class.getSimpleName())
-            .include(CharacterReplaceBenchmark.class.getSimpleName())
+//            .include(CharacterReplaceBenchmark.class.getSimpleName())
+//            .include(StringEqualityBenchmark.class.getSimpleName())
+//            .include(ArrayAllocationEliminationBenchmark.class.getSimpleName())
+            .include(BrokenConcatenationBenchmark.class.getSimpleName())
+//            .include(InvocationTraceBenchmark.class.getSimpleName())
 //            .include(HashMapVsEnumMapInstantiationBenchmark.class.getSimpleName())
 //            .include(HashMapVsEnumMapIterationBenchmark.class.getSimpleName())
 //            .include(TornAppendBenchmark.class.getSimpleName())
-            .warmupIterations(5)
+            .warmupIterations(10)
             .warmupTime(TimeValue.seconds(1))
-            .measurementIterations(5)
-            .measurementTime(TimeValue.seconds(2))
-            .forks(10) //0 makes debugging possible
+            .measurementIterations(10)
+            .measurementTime(TimeValue.seconds(10))
+            .forks(5) //0 makes debugging possible
             .shouldFailOnError(true)
 //				.shouldDoGC(false)
-//				.jvmArgsAppend(
+				.jvmArgsAppend(
 //						"-Xint"
 //						,
 //						"-XX:+UnlockDiagnosticVMOptions",
 //						"-XX:+PrintCompilation",
 //						"-XX:+PrintInlining",
 //						"-XX:+LogCompilation"
-//				)
+				)
             .addProfiler(GCProfiler.class)// memory and GC profiler
             .build();
 
