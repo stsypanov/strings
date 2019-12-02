@@ -3,7 +3,6 @@ apply plugin: 'maven'
 apply plugin: 'application'
 
 sourceCompatibility = 13
-targetCompatibility = 13
 
 group = 'tsypanov'
 version = '1.0-SNAPSHOT'
