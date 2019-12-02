@@ -1,6 +1,5 @@
 package tsypanov.strings.benchmark;
 
-import tsypanov.strings.benchmark.concatenation.ArrayAllocationEliminationBenchmark;
 import tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark;
 import tsypanov.strings.benchmark.concatenation.InvocationTraceBenchmark;
 import tsypanov.strings.benchmark.string.CharacterReplaceBenchmark;
@@ -38,6 +37,8 @@ public class BenchmarkRunner {
 //						"-Xint"
 //						,
 //						"-XX:+UnlockDiagnosticVMOptions",
+//						"-XX:TieredStopAtLevel=1"
+//                ,
 //						"-XX:+PrintCompilation",
 //						"-XX:+PrintInlining",
 //						"-XX:+LogCompilation"
