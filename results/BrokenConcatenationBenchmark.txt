@@ -66,3 +66,27 @@ BrokenConcatenationBenchmark.slow:·gc.churn.G1_Survivor_Space        avgt   25 
 BrokenConcatenationBenchmark.slow:·gc.churn.G1_Survivor_Space.norm   avgt   25    ≈ 10⁻³              B/op
 BrokenConcatenationBenchmark.slow:·gc.count                          avgt   25  3552,000            counts
 BrokenConcatenationBenchmark.slow:·gc.time                           avgt   25  2662,000                ms
+
+
+JDK 13 -XX:TieredStopAtLevel=1
+
+Benchmark                                                           Mode  Cnt     Score     Error   Units
+BrokenConcatenationBenchmark.fast                                   avgt   50    68,591 ±   1,657   ns/op
+BrokenConcatenationBenchmark.fast:·gc.alloc.rate                    avgt   50  4246,160 ±  95,063  MB/sec
+BrokenConcatenationBenchmark.fast:·gc.alloc.rate.norm               avgt   50   320,000 ±   0,001    B/op
+BrokenConcatenationBenchmark.fast:·gc.churn.G1_Eden_Space           avgt   50  4255,226 ±  96,426  MB/sec
+BrokenConcatenationBenchmark.fast:·gc.churn.G1_Eden_Space.norm      avgt   50   320,677 ±   0,579    B/op
+BrokenConcatenationBenchmark.fast:·gc.churn.G1_Survivor_Space       avgt   50     0,004 ±   0,001  MB/sec
+BrokenConcatenationBenchmark.fast:·gc.churn.G1_Survivor_Space.norm  avgt   50    ≈ 10⁻³              B/op
+BrokenConcatenationBenchmark.fast:·gc.count                         avgt   50  6081,000            counts
+BrokenConcatenationBenchmark.fast:·gc.time                          avgt   50  4496,000                ms
+
+BrokenConcatenationBenchmark.slow                                   avgt   50    72,872 ±   3,211   ns/op
+BrokenConcatenationBenchmark.slow:·gc.alloc.rate                    avgt   50  4018,411 ± 173,100  MB/sec
+BrokenConcatenationBenchmark.slow:·gc.alloc.rate.norm               avgt   50   320,000 ±   0,001    B/op
+BrokenConcatenationBenchmark.slow:·gc.churn.G1_Eden_Space           avgt   50  4025,665 ± 173,916  MB/sec
+BrokenConcatenationBenchmark.slow:·gc.churn.G1_Eden_Space.norm      avgt   50   320,573 ±   0,547    B/op
+BrokenConcatenationBenchmark.slow:·gc.churn.G1_Survivor_Space       avgt   50     0,004 ±   0,001  MB/sec
+BrokenConcatenationBenchmark.slow:·gc.churn.G1_Survivor_Space.norm  avgt   50    ≈ 10⁻³              B/op
+BrokenConcatenationBenchmark.slow:·gc.count                         avgt   50  6199,000            counts
+BrokenConcatenationBenchmark.slow:·gc.time                          avgt   50  4488,000                ms

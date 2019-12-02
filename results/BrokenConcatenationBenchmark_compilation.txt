@@ -1,0 +1,60 @@
+BrokenConcatenationBenchmark
+---------------------------------------------------------------------------------------------------------------------
+
+полная компиляция
+
+slow
+
+                              @ 36   tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark::slow (28 bytes)
+                                @ 9   java.lang.StringBuilder::<init> (7 bytes)
+                                  @ 3   java.lang.AbstractStringBuilder::<init> (39 bytes)   callee is too large
+                                @ 14   java.lang.StringBuilder::append (8 bytes)
+                                  @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                                @ 18   java.lang.Class::getName (18 bytes)
+                                  @ 14   java.lang.Class::initClassName (0 bytes)   native method
+                                @ 21   java.lang.StringBuilder::append (8 bytes)
+                                  @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                                @ 24   java.lang.StringBuilder::toString (35 bytes)   callee is too large
+
+fast
+
+                              @ 36   tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark::fast (30 bytes)   inline (hot)
+                                @ 6   java.lang.Class::getName (18 bytes)   inline (hot)
+                                  @ 14   java.lang.Class::initClassName (0 bytes)   native method
+                                @ 14   java.lang.StringBuilder::<init> (7 bytes)   inline (hot)
+                                @ 19   java.lang.StringBuilder::append (8 bytes)   inline (hot)
+                                @ 23   java.lang.StringBuilder::append (8 bytes)   inline (hot)
+                                @ 26   java.lang.StringBuilder::toString (35 bytes)   inline (hot)
+
+---------------------------------------------------------------------------------------------------------------------
+
+-XX:TieredStopAtLevel=1
+
+slow
+
+                              @ 36   tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark::slow (28 bytes)
+                                @ 9   java.lang.StringBuilder::<init> (7 bytes)
+                                  @ 3   java.lang.AbstractStringBuilder::<init> (39 bytes)   callee is too large
+                                @ 14   java.lang.StringBuilder::append (8 bytes)
+                                  @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                                @ 18   java.lang.Class::getName (18 bytes)
+                                  @ 14   java.lang.Class::initClassName (0 bytes)   native method
+                                @ 21   java.lang.StringBuilder::append (8 bytes)
+                                  @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                                @ 24   java.lang.StringBuilder::toString (35 bytes)   callee is too large
+
+fast
+
+                              @ 36   tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark::fast (30 bytes)
+                                @ 6   java.lang.Class::getName (18 bytes)
+                                  @ 14   java.lang.Class::initClassName (0 bytes)   native method
+                                @ 14   java.lang.StringBuilder::<init> (7 bytes)
+                                  @ 3   java.lang.AbstractStringBuilder::<init> (39 bytes)   callee is too large
+                                @ 19   java.lang.StringBuilder::append (8 bytes)
+                                  @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                                @ 23   java.lang.StringBuilder::append (8 bytes)
+                                  @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                                @ 26   java.lang.StringBuilder::toString (35 bytes)   callee is too large
+
+---------------------------------------------------------------------------------------------------------------------
+

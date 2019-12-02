@@ -18,12 +18,14 @@ public class BrokenConcatenationBenchmark {
 
   @Benchmark
   public String slow(Data data) {
-    return "class " + data.clazz.getName();
+    final Class<? extends Data> clazz = data.clazz;
+    return "class " + clazz.getName();
   }
 
   @Benchmark
   public String fast(Data data) {
-    final String clazzName = data.clazz.getName();
+    final Class<? extends Data> clazz = data.clazz;
+    final String clazzName = clazz.getName();
     return "class " + clazzName;
   }
 
