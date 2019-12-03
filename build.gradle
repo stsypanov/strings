@@ -39,7 +39,7 @@ dependencies {
 //  println 'Compiler args: ' + options.compilerArgs.toString();
 //}
 
-ext.moduleName = 'spring-data-examples'
+ext.moduleName = 'strings-jmh-examples'
 
 compileJava {
   inputs.property('moduleName', moduleName)
