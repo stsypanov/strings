@@ -1,20 +1,47 @@
-Benchmark                                                          Mode  Cnt     Score     Error   Units
-createInvocationTraceName                                          avgt   20    87,983 ±   3,513   ns/op
-createInvocationTraceName:·gc.alloc.rate                           avgt   20  8356,096 ± 308,611  MB/sec
-createInvocationTraceName:·gc.alloc.rate.norm                      avgt   20   808,000 ±   0,001    B/op
-createInvocationTraceName:·gc.churn.PS_Eden_Space                  avgt   20  8355,401 ± 303,976  MB/sec
-createInvocationTraceName:·gc.churn.PS_Eden_Space.norm             avgt   20   807,958 ±   2,404    B/op
-createInvocationTraceName:·gc.churn.PS_Survivor_Space              avgt   20     0,122 ±   0,013  MB/sec
-createInvocationTraceName:·gc.churn.PS_Survivor_Space.norm         avgt   20     0,012 ±   0,002    B/op
-createInvocationTraceName:·gc.count                                avgt   20  2964,000            counts
-createInvocationTraceName:·gc.time                                 avgt   20  1778,000                ms
+JDK 8
 
-patchedCreateInvocationTraceName                                   avgt   20    21,902 ±   0,773   ns/op
-patchedCreateInvocationTraceName:·gc.alloc.rate                    avgt   20  9302,710 ± 317,268  MB/sec
-patchedCreateInvocationTraceName:·gc.alloc.rate.norm               avgt   20   224,000 ±   0,001    B/op
-patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space           avgt   20  9300,457 ± 317,797  MB/sec
-patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space.norm      avgt   20   223,946 ±   0,567    B/op
-patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space       avgt   20     0,051 ±   0,012  MB/sec
-patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space.norm  avgt   20     0,001 ±   0,001    B/op
-patchedCreateInvocationTraceName:·gc.count                         avgt   20  2982,000            counts
-patchedCreateInvocationTraceName:·gc.time                          avgt   20  1782,000                ms
+Benchmark                                                          Mode  Cnt     Score     Error   Units
+createInvocationTraceName                                          avgt   25    97,208 ±   1,757   ns/op
+createInvocationTraceName:·gc.alloc.rate                           avgt   25  6805,464 ± 121,558  MB/sec
+createInvocationTraceName:·gc.alloc.rate.norm                      avgt   25   728,000 ±   0,001    B/op
+createInvocationTraceName:·gc.churn.PS_Eden_Space                  avgt   25  6806,067 ± 122,455  MB/sec
+createInvocationTraceName:·gc.churn.PS_Eden_Space.norm             avgt   25   728,090 ±   4,945    B/op
+createInvocationTraceName:·gc.churn.PS_Survivor_Space              avgt   25     0,047 ±   0,004  MB/sec
+createInvocationTraceName:·gc.churn.PS_Survivor_Space.norm         avgt   25     0,005 ±   0,001    B/op
+createInvocationTraceName:·gc.count                                avgt   25  1310,000            counts
+createInvocationTraceName:·gc.time                                 avgt   25   769,000                ms
+
+patchedCreateInvocationTraceName                                   avgt   25    89,074 ±   5,297   ns/op
+patchedCreateInvocationTraceName:·gc.alloc.rate                    avgt   25  7468,160 ± 447,850  MB/sec
+patchedCreateInvocationTraceName:·gc.alloc.rate.norm               avgt   25   728,000 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space           avgt   25  7465,862 ± 457,324  MB/sec
+patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space.norm      avgt   25   727,705 ±   4,455    B/op
+patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space       avgt   25     0,055 ±   0,006  MB/sec
+patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space.norm  avgt   25     0,005 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.count                         avgt   25  1437,000            counts
+patchedCreateInvocationTraceName:·gc.time                          avgt   25   836,000                ms
+
+
+JDK 11
+
+Benchmark                                                          Mode  Cnt     Score     Error   Units
+createInvocationTraceName                                          avgt   25    68,720 ±   2,630   ns/op
+createInvocationTraceName:·gc.alloc.rate                           avgt   25  5510,982 ± 201,830  MB/sec
+createInvocationTraceName:·gc.alloc.rate.norm                      avgt   25   416,000 ±   0,001    B/op
+createInvocationTraceName:·gc.churn.PS_Eden_Space                  avgt   25  5517,474 ± 198,746  MB/sec
+createInvocationTraceName:·gc.churn.PS_Eden_Space.norm             avgt   25   416,526 ±   3,165    B/op
+createInvocationTraceName:·gc.churn.PS_Survivor_Space              avgt   25     0,063 ±   0,015  MB/sec
+createInvocationTraceName:·gc.churn.PS_Survivor_Space.norm         avgt   25     0,005 ±   0,001    B/op
+createInvocationTraceName:·gc.count                                avgt   25  1062,000            counts
+createInvocationTraceName:·gc.time                                 avgt   25   277,000                ms
+
+patchedCreateInvocationTraceName                                   avgt   25    25,169 ±   0,838   ns/op
+patchedCreateInvocationTraceName:·gc.alloc.rate                    avgt   25  4626,808 ± 143,751  MB/sec
+patchedCreateInvocationTraceName:·gc.alloc.rate.norm               avgt   25   128,000 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space           avgt   25  4634,259 ± 145,188  MB/sec
+patchedCreateInvocationTraceName:·gc.churn.PS_Eden_Space.norm      avgt   25   128,213 ±   1,082    B/op
+patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space       avgt   25     0,065 ±   0,008  MB/sec
+patchedCreateInvocationTraceName:·gc.churn.PS_Survivor_Space.norm  avgt   25     0,002 ±   0,001    B/op
+patchedCreateInvocationTraceName:·gc.count                         avgt   25   892,000            counts
+patchedCreateInvocationTraceName:·gc.time                          avgt   25   236,000                ms
+
