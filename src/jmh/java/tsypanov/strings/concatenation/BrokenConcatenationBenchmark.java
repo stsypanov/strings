@@ -1,4 +1,4 @@
-package tsypanov.strings.benchmark.concatenation;
+package tsypanov.strings.concatenation;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;

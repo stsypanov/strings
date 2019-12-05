@@ -1,3 +1,16 @@
+buildscript {
+  repositories {
+    jcenter()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "me.champeau.gradle:jmh-gradle-plugin:0.5.0"
+  }
+}
+
+apply plugin: "me.champeau.gradle.jmh"
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'application'
@@ -19,6 +32,14 @@ repositories {
 ext {
   jvmVersion = "1.22"
   jupiterVersion = "5.3.2"
+}
+
+sourceSets {
+  generated {
+    java {
+      srcDir "$projectDir/jmh/generated"
+    }
+  }
 }
 
 //compileJava {

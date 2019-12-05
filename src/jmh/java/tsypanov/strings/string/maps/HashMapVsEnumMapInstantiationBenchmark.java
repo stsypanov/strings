@@ -1,10 +1,12 @@
-package tsypanov.strings.benchmark.string.maps;
+package tsypanov.strings.string.maps;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
+import tsypanov.strings.source.maps.Constants;
+import tsypanov.strings.source.maps.ConstantsEnum;
 
 import java.util.EnumMap;
 import java.util.HashMap;

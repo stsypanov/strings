@@ -1,8 +1,7 @@
-package tsypanov.strings.benchmark;
+package tsypanov.strings;
 
-import tsypanov.strings.benchmark.concatenation.BrokenConcatenationBenchmark;
-import tsypanov.strings.benchmark.concatenation.InvocationTraceBenchmark;
-import tsypanov.strings.benchmark.string.CharacterReplaceBenchmark;
+import tsypanov.strings.concatenation.BrokenConcatenationBenchmark;
+import tsypanov.strings.concatenation.InvocationTraceBenchmark;
 import org.openjdk.jmh.profile.GCProfiler;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;

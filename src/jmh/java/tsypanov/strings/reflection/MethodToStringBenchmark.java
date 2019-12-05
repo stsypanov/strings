@@ -1,4 +1,4 @@
-package tsypanov.strings.benchmark.reflection;
+package tsypanov.strings.reflection;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;

@@ -9,7 +9,7 @@ CharacterReplaceBenchmark.stringReplace                        avgt   50    30,7
 CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   50    56,000 ±   0,001    B/op
 CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   50   112,000 ±   0,001    B/op
 
-klass = tsypanov.strings.benchmark.string.CharacterReplaceBenchmark.class
+klass = tsypanov.strings.string.CharacterReplaceBenchmark.class
 
 Benchmark                                                      Mode  Cnt     Score     Error   Units
 CharacterReplaceBenchmark.manualReplace                        avgt   50   160,336 ±   2,628   ns/op

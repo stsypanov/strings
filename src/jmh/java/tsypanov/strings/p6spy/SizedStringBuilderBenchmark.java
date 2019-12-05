@@ -1,4 +1,4 @@
-package tsypanov.strings.benchmark.p6spy;
+package tsypanov.strings.p6spy;
 
 import tsypanov.strings.source.p6spy.ToHexStringConverter;
 import org.openjdk.jmh.annotations.Benchmark;

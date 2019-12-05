@@ -1,4 +1,4 @@
-package tsypanov.strings.benchmark.string;
+package tsypanov.strings.string;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -12,27 +12,26 @@ import org.openjdk.jmh.annotations.State;
 
 import java.util.concurrent.TimeUnit;
 
-import tsypanov.strings.source.string.StringConcat;
+import tsypanov.strings.source.string.Joiner;
 import tsypanov.strings.source.utils.RandomStringGenerator;
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @BenchmarkMode(value = Mode.AverageTime)
 @Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
-public class StringBuilderVsStringChainBenchmark {
+public class StringBuilderVsStringJoinerBenchmark {
 
   @Benchmark
   public String stringBuilder(Data data) {
-    return StringConcat.concatWithStringBuilder(data.stringArray);
+    String[] stringArray = data.stringArray;
+
+    return Joiner.joinWithStringBuilder(stringArray);
   }
 
   @Benchmark
-  public String stringChain(Data data) {
-    return StringConcat.concatWithStringChain(data.stringArray);
-  }
+  public String stringJoiner(Data data) {
+    String[] stringArray = data.stringArray;
 
-  @Benchmark
-  public String stringChainDefault(Data data) {
-    return StringConcat.concatWithStringChainDefault(data.stringArray);
+    return Joiner.joinWithStringJoiner(stringArray);
   }
 
   @State(Scope.Thread)
@@ -42,10 +41,10 @@ public class StringBuilderVsStringChainBenchmark {
     private boolean latin;
 
     @Param({"10", "100", "1000"})
-    private int stringCount;
+    private int length;
 
-    @Param({"1", "10", "50", "100"})
-    private int stringLength;
+    @Param("10")
+    private int count;
 
     private String[] stringArray;
 
@@ -53,14 +52,15 @@ public class StringBuilderVsStringChainBenchmark {
     public void setup() {
       RandomStringGenerator generator = new RandomStringGenerator();
 
-      stringArray = new String[stringCount];
+      stringArray = new String[count];
 
       String alphabet = latin
               ? "abcdefghijklmnopqrstuvwxyz"        //English
               : "абвгдеёжзиклмнопрстуфхцчшщьыъэюя"; //Russian
 
-      for (int i = 0; i < stringCount; i++) {
-        stringArray[i] = generator.randomString(alphabet, stringLength);
+      for (int i = 0; i < count; i++) {
+        String string = generator.randomString(alphabet, length);
+        stringArray[i] = string;
       }
     }
 

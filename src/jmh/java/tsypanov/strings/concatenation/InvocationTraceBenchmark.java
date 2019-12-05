@@ -1,4 +1,4 @@
-package tsypanov.strings.benchmark.concatenation;
+package tsypanov.strings.concatenation;
 
 import org.openjdk.jmh.annotations.*;
 
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
-@Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
+@Fork(jvmArgsAppend = {"-Xms4g", "-Xmx4g", "-XX:+UseParallelGC"})
 public class InvocationTraceBenchmark {
 
   @Benchmark
@@ -35,9 +35,10 @@ public class InvocationTraceBenchmark {
     if (clazz.isInstance(invocation.getThis())) {
       clazz = invocation.getThis().getClass();
     }
-    // вклеивание переменной ломает улучшенную склейку строк, см. BrokenConcatenationBenchmark
-    final String name = clazz.getName();
-    return invocation.getPrefix() + name + '.' + method.getName() + invocation.getSuffix();
+    // вынос clazz.getName() в отдельную переменную решает проблему, описанную здесь
+    // https://stackoverflow.com/questions/59157085/java-8-class-getname-slows-down-string-concatenation-chain
+    // http://mail.openjdk.java.net/pipermail/core-libs-dev/2019-December/063763.html
+    return invocation.getPrefix() + clazz.getName() + '.' + method.getName() + invocation.getSuffix();
   }
 
   @State(Scope.Thread)

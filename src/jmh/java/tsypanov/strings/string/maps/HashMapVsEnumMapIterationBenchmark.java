@@ -1,4 +1,4 @@
-package tsypanov.strings.benchmark.string.maps;
+package tsypanov.strings.string.maps;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -9,6 +9,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.infra.Blackhole;
+import tsypanov.strings.source.maps.Constants;
+import tsypanov.strings.source.maps.ConstantsEnum;
 
 import java.util.EnumMap;
 import java.util.HashMap;
