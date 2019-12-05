@@ -3,6 +3,7 @@ package tsypanov.strings.source.p6spy;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -29,6 +30,12 @@ class ToHexStringConverterTest {
   @RepeatedTest(100)
   void chars_toHexString() {
     String actual = converter.chars_toHexString(bytes);
+    assertEquals(expected, actual);
+  }
+
+  @RepeatedTest(100)
+  void bytes_toHexString() {
+    String actual = converter.bytes_toHexString(bytes);
     assertEquals(expected, actual);
   }
 

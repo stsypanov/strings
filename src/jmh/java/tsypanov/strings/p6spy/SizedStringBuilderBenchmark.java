@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
-@Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
+@Fork(jvmArgsAppend = {"-Xms4g", "-Xmx4g", "-XX:+UseParallelGC"})
 public class SizedStringBuilderBenchmark {
 
   private byte[] bytes;
@@ -42,6 +42,11 @@ public class SizedStringBuilderBenchmark {
   @Benchmark
   public String chars() {
     return converter.chars_toHexString(bytes);
+  }
+
+  @Benchmark
+  public String bytes() {
+    return converter.bytes_toHexString(bytes);
   }
 
 }
