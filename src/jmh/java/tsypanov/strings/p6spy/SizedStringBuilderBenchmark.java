@@ -24,7 +24,7 @@ public class SizedStringBuilderBenchmark {
 
   @Setup
   public void init() {
-    bytes = new byte[1024 * 1024 * 20];
+    bytes = new byte[1024 * 1024];
     converter = new ToHexStringConverter();
     ThreadLocalRandom.current().nextBytes(bytes);
   }
