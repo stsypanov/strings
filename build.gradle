@@ -15,7 +15,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'application'
 
-sourceCompatibility = 13
+sourceCompatibility = 1.8
 
 group = 'tsypanov'
 version = '1.0-SNAPSHOT'

@@ -15,11 +15,11 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
 public class ChainedAppendBenchmark {
-  private final String str1 = "1".repeat(10);
-  private final String str2 = "2".repeat(10);
-  private final String str3 = "3".repeat(10);
-  private final String str4 = "4".repeat(10);
-  private final String str5 = "5".repeat(10);
+  private final String str1 = "1";
+  private final String str2 = "2";
+  private final String str3 = "3";
+  private final String str4 = "4";
+  private final String str5 = "5";
 
   @Benchmark
   @SuppressWarnings("ALL")
