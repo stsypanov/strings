@@ -30,7 +30,7 @@ repositories {
 }
 
 ext {
-  jvmVersion = "1.22"
+  jvmVersion = "1.23"
   jupiterVersion = "5.3.2"
 }
 
