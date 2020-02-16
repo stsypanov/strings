@@ -8,11 +8,13 @@ import java.util.concurrent.TimeUnit;
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
+@Fork(jvmArgsAppend = {"-Xms4g", "-Xmx4g", "-XX:+UseParallelGC"})
 public class StringJoinerBenchmark {
 
   @Benchmark
   public String stringJoiner(Data data) {
-    return Joiner.joinWithStringJoiner(data.stringArray);
+    String[] stringArray = data.stringArray;
+    return Joiner.joinWithStringJoiner(stringArray);
   }
 
   @State(Scope.Thread)
