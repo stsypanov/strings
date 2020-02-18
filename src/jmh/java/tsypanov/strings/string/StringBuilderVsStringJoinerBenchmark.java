@@ -17,7 +17,7 @@ import tsypanov.strings.source.utils.RandomStringGenerator;
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @BenchmarkMode(value = Mode.AverageTime)
-@Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
+@Fork(jvmArgsAppend = {"-Xms4g", "-Xmx4g", "-XX:+UseParallelGC"})
 public class StringBuilderVsStringJoinerBenchmark {
 
   @Benchmark
@@ -43,8 +43,7 @@ public class StringBuilderVsStringJoinerBenchmark {
     @Param({"10", "100", "1000"})
     private int length;
 
-    @Param("10")
-    private int count;
+    private int count = 10;
 
     private String[] stringArray;
 
