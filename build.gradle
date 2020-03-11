@@ -30,7 +30,7 @@ repositories {
 }
 
 ext {
-  jvmVersion = "1.23"
+  jmhVersion = "1.23"
   jupiterVersion = "5.3.2"
 }
 
@@ -47,10 +47,10 @@ sourceSets {
 //}
 
 dependencies {
-  implementation "org.openjdk.jmh:jmh-core:${jvmVersion}"
+  implementation "org.openjdk.jmh:jmh-core:${jmhVersion}"
   implementation "org.apache.commons:commons-lang3:3.8.1"
-  compileOnly "org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}"
-  annotationProcessor "org.openjdk.jmh:jmh-generator-annprocess:${jvmVersion}"
+  compileOnly "org.openjdk.jmh:jmh-generator-annprocess:${jmhVersion}"
+  annotationProcessor "org.openjdk.jmh:jmh-generator-annprocess:${jmhVersion}"
 
   testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
   testImplementation "org.junit.jupiter:junit-jupiter-params:${jupiterVersion}"
