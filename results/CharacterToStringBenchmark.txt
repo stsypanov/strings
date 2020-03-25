@@ -1,0 +1,15 @@
+JDK 14
+
+Benchmark                                                       Mode    Score     Error   Units
+
+CharacterToStringBenchmark.toString_utf8                        avgt   14.723 ±   1.354   ns/op
+CharacterToStringBenchmark.valueOf_utf8                         avgt    7.678 ±   0.601   ns/op
+
+CharacterToStringBenchmark.toString_latin                       avgt   10.992 ±   1.371   ns/op
+CharacterToStringBenchmark.valueOf_latin                        avgt    7.844 ±   1.044   ns/op
+
+CharacterToStringBenchmark.toString_utf8:·gc.alloc.rate.norm    avgt   96.003 ±   0.001    B/op
+CharacterToStringBenchmark.valueOf_utf8:·gc.alloc.rate.norm     avgt   48.002 ±   0.001    B/op
+
+CharacterToStringBenchmark.toString_latin:·gc.alloc.rate.norm   avgt   72.003 ±   0.001    B/op
+CharacterToStringBenchmark.valueOf_latin:·gc.alloc.rate.norm    avgt   48.002 ±   0.001    B/op
