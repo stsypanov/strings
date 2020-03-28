@@ -1,0 +1,42 @@
+JDK 8
+                                       (length)  Mode      Score     Error   Units
+
+newString                                     0  avgt     66.084 ±   2.121   ns/op
+toString                                      0  avgt     44.601 ±   0.656   ns/op
+newString_noCS                                0  avgt     69.694 ±   1.949   ns/op
+toString_noCS                                 0  avgt     43.758 ±   0.333   ns/op
+
+newString                                    10  avgt     53.232 ±   1.569   ns/op
+toString                                     10  avgt     45.151 ±   0.397   ns/op
+newString_noCS                               10  avgt     52.005 ±   0.473   ns/op
+toString_noCS                                10  avgt     45.657 ±   4.325   ns/op
+
+newString                                   100  avgt     96.067 ±   1.466   ns/op
+toString                                    100  avgt     77.924 ±   0.645   ns/op
+newString_noCS                              100  avgt     94.716 ±   3.138   ns/op
+toString_noCS                               100  avgt     80.460 ±   1.375   ns/op
+
+newString                                  1000  avgt    667.188 ±  33.071   ns/op
+toString                                   1000  avgt    511.302 ±   1.730   ns/op
+newString_noCS                             1000  avgt    624.721 ±  20.786   ns/op
+toString_noCS                              1000  avgt    530.833 ±  11.087   ns/op
+
+newString:·gc.alloc.rate.norm                 0  avgt     96.000 ±   0.001    B/op
+toString:·gc.alloc.rate.norm                  0  avgt     40.000 ±   0.001    B/op
+newString_noCS:·gc.alloc.rate.norm            0  avgt     56.000 ±   0.001    B/op
+toString_noCS:·gc.alloc.rate.norm             0  avgt     40.000 ±   0.001    B/op
+
+newString:·gc.alloc.rate.norm                10  avgt    136.000 ±   0.001    B/op
+toString:·gc.alloc.rate.norm                 10  avgt     64.000 ±   0.001    B/op
+newString_noCS:·gc.alloc.rate.norm           10  avgt     96.000 ±   0.001    B/op
+toString_noCS:·gc.alloc.rate.norm            10  avgt     64.000 ±   0.001    B/op
+
+newString:·gc.alloc.rate.norm               100  avgt    400.000 ±   0.001    B/op
+toString:·gc.alloc.rate.norm                100  avgt    240.000 ±   0.001    B/op
+newString_noCS:·gc.alloc.rate.norm          100  avgt    360.000 ±   0.001    B/op
+toString_noCS:·gc.alloc.rate.norm           100  avgt    240.000 ±   0.001    B/op
+
+newString:·gc.alloc.rate.norm              1000  avgt   3096.001 ±   0.001    B/op
+toString:·gc.alloc.rate.norm               1000  avgt   2040.001 ±   0.001    B/op
+newString_noCS:·gc.alloc.rate.norm         1000  avgt   3056.001 ±   0.001    B/op
+toString_noCS:·gc.alloc.rate.norm          1000  avgt   2040.001 ±   0.001    B/op
