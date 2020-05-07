@@ -1,0 +1,23 @@
+JDK 11
+
+Benchmark                                                            (length)  Mode  Cnt     Score      Error   Units
+
+StringBuilderSubstringBenchmark.original                                    1  avgt   20    19.294 ±    1.035   ns/op
+StringBuilderSubstringBenchmark.original                                    5  avgt   20    23.389 ±    4.260   ns/op
+StringBuilderSubstringBenchmark.original                                   10  avgt   20    21.846 ±    1.164   ns/op
+StringBuilderSubstringBenchmark.original                                  100  avgt   20    33.003 ±    6.673   ns/op
+
+StringBuilderSubstringBenchmark.simplified                                  1  avgt   20     8.974 ±    0.374   ns/op
+StringBuilderSubstringBenchmark.simplified                                  5  avgt   20    10.880 ±    0.582   ns/op
+StringBuilderSubstringBenchmark.simplified                                 10  avgt   20    11.705 ±    1.739   ns/op
+StringBuilderSubstringBenchmark.simplified                                100  avgt   20    14.810 ±    2.050   ns/op
+
+StringBuilderSubstringBenchmark.original:·gc.alloc.rate.norm                1  avgt   20    88.000 ±    0.001    B/op
+StringBuilderSubstringBenchmark.original:·gc.alloc.rate.norm                5  avgt   20    96.000 ±    0.001    B/op
+StringBuilderSubstringBenchmark.original:·gc.alloc.rate.norm               10  avgt   20   112.000 ±    0.001    B/op
+StringBuilderSubstringBenchmark.original:·gc.alloc.rate.norm              100  avgt   20   288.000 ±    0.001    B/op
+
+StringBuilderSubstringBenchmark.simplified:·gc.alloc.rate.norm              1  avgt   20    40.000 ±    0.001    B/op
+StringBuilderSubstringBenchmark.simplified:·gc.alloc.rate.norm              5  avgt   20    48.000 ±    0.001    B/op
+StringBuilderSubstringBenchmark.simplified:·gc.alloc.rate.norm             10  avgt   20    56.000 ±    0.001    B/op
+StringBuilderSubstringBenchmark.simplified:·gc.alloc.rate.norm            100  avgt   20   144.000 ±    0.001    B/op
