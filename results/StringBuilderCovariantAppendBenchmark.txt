@@ -1,26 +1,29 @@
+JDK 8
+
+Benchmark                              (latin)  (length)  Mode  Cnt     Score     Error   Units
+appendCovariant                           true        10  avgt   50   180.230 ±  10.346   ns/op
+appendExact                               true        10  avgt   50    68.517 ±   1.479   ns/op
+
+appendCovariant                          false        10  avgt   50   177.713 ±   4.438   ns/op
+appendExact                              false        10  avgt   50    67.798 ±   1.364   ns/op
+
+appendCovariant:·gc.alloc.rate.norm       true        10  avgt   50   688.000 ±   0.001    B/op
+appendExact:·gc.alloc.rate.norm           true        10  avgt   50   112.000 ±   0.001    B/op
+
+appendCovariant:·gc.alloc.rate.norm      false        10  avgt   50   816.000 ±   0.001    B/op
+appendExact:·gc.alloc.rate.norm          false        10  avgt   50   112.000 ±   0.001    B/op
+
 JDK 14
 
 Benchmark                              (latin)  (length)  Mode  Cnt     Score     Error   Units
 appendCovariant                           true        10  avgt   50   228.858 ±  18.627   ns/op
 appendExact                               true        10  avgt   50    57.950 ±   2.660   ns/op
 
-appendCovariant                           true        50  avgt   50  1083.690 ±  50.527   ns/op
-appendExact                               true        50  avgt   50   262.376 ±  11.242   ns/op
-
 appendCovariant                          false        10  avgt   50   292.879 ±  12.408   ns/op
 appendExact                              false        10  avgt   50    90.228 ±   2.277   ns/op
-
-appendCovariant                          false        50  avgt   50  1391.110 ±  70.276   ns/op
-appendExact                              false        50  avgt   50   299.901 ±   6.540   ns/op
 
 appendCovariant:·gc.alloc.rate.norm       true        10  avgt   50   688.026 ±   0.002    B/op
 appendExact:·gc.alloc.rate.norm           true        10  avgt   50   112.004 ±   0.001    B/op
 
-appendCovariant:·gc.alloc.rate.norm       true        50  avgt   50  3747.339 ±   4.801    B/op
-appendExact:·gc.alloc.rate.norm           true        50  avgt   50   296.012 ±   0.002    B/op
-
 appendCovariant:·gc.alloc.rate.norm      false        10  avgt   50  1096.040 ±   0.002    B/op
 appendExact:·gc.alloc.rate.norm          false        10  avgt   50   200.008 ±   0.001    B/op
-
-appendCovariant:·gc.alloc.rate.norm      false        50  avgt   50  5944.215 ±   0.008    B/op
-appendExact:·gc.alloc.rate.norm          false        50  avgt   50   568.022 ±   0.002    B/op

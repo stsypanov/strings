@@ -12,6 +12,10 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 
+/**
+ * {@link} https://youtrack.jetbrains.com/issue/IDEA-240288
+ * {@link} https://github.com/spring-projects/spring-framework/pull/25024/files
+ */
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g", "-XX:+UseParallelGC"})
@@ -45,7 +49,7 @@ public class StringBuilderCovariantAppendBenchmark {
   public static class Data {
     private String filename;
 
-    @Param({"10", "50"})
+    @Param("10")
     private int length;
 
     @Param({"true", "false"})
