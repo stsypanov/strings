@@ -13,8 +13,7 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 
 /**
- * {@link} https://youtrack.jetbrains.com/issue/IDEA-240288
- * {@link} https://github.com/spring-projects/spring-framework/pull/25024/files
+ * {@link} https://github.com/spring-projects/spring-framework/pull/25056
  */
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
