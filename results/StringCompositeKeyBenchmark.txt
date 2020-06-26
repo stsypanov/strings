@@ -1,0 +1,120 @@
+JDK 8
+
+Benchmark                                                                   Mode  Cnt     Score     Error   Units
+StringCompositeKeyBenchmark.compositeKey                                    avgt   25     6.759 ±   0.380   ns/op
+StringCompositeKeyBenchmark.compositeKey:·gc.alloc.rate                     avgt   25    ≈ 10⁻⁴            MB/sec
+StringCompositeKeyBenchmark.compositeKey:·gc.alloc.rate.norm                avgt   25    ≈ 10⁻⁶              B/op
+StringCompositeKeyBenchmark.compositeKey:·gc.count                          avgt   25       ≈ 0            counts
+
+StringCompositeKeyBenchmark.concatenation                                   avgt   25    69.063 ±   1.258   ns/op
+StringCompositeKeyBenchmark.concatenation:·gc.alloc.rate                    avgt   25  1841.518 ±  33.279  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.alloc.rate.norm               avgt   25   200.000 ±   0.001    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.PS_Eden_Space           avgt   25  1846.661 ± 135.165  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.PS_Eden_Space.norm      avgt   25   200.547 ±  14.182    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.PS_Survivor_Space       avgt   25     0.061 ±   0.025  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.PS_Survivor_Space.norm  avgt   25     0.007 ±   0.003    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.count                         avgt   25   102.000            counts
+StringCompositeKeyBenchmark.concatenation:·gc.time                          avgt   25    74.000                ms
+
+StringCompositeKeyBenchmark.list                                            avgt   25    25.093 ±   0.432   ns/op
+StringCompositeKeyBenchmark.list:·gc.alloc.rate                             avgt   25  1216.468 ±  20.782  MB/sec
+StringCompositeKeyBenchmark.list:·gc.alloc.rate.norm                        avgt   25    48.000 ±   0.001    B/op
+StringCompositeKeyBenchmark.list:·gc.churn.PS_Eden_Space                    avgt   25  1209.960 ± 160.917  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.PS_Eden_Space.norm               avgt   25    47.778 ±   6.456    B/op
+StringCompositeKeyBenchmark.list:·gc.churn.PS_Survivor_Space                avgt   25     0.048 ±   0.025  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.PS_Survivor_Space.norm           avgt   25     0.002 ±   0.001    B/op
+StringCompositeKeyBenchmark.list:·gc.count                                  avgt   25    67.000            counts
+StringCompositeKeyBenchmark.list:·gc.time                                   avgt   25    49.000                ms
+
+StringCompositeKeyBenchmark.mapInMap                                        avgt   25     7.983 ±   0.210   ns/op
+StringCompositeKeyBenchmark.mapInMap:·gc.alloc.rate                         avgt   25    ≈ 10⁻⁴            MB/sec
+StringCompositeKeyBenchmark.mapInMap:·gc.alloc.rate.norm                    avgt   25    ≈ 10⁻⁵              B/op
+StringCompositeKeyBenchmark.mapInMap:·gc.count                              avgt   25       ≈ 0            counts
+
+
+JDK 11
+
+Benchmark                                                                   Mode  Cnt     Score     Error   Units
+StringCompositeKeyBenchmark.compositeKey                                    avgt   25     6.065 ±   0.415   ns/op
+StringCompositeKeyBenchmark.compositeKey:·gc.alloc.rate                     avgt   25    ≈ 10⁻⁴            MB/sec
+StringCompositeKeyBenchmark.compositeKey:·gc.alloc.rate.norm                avgt   25    ≈ 10⁻⁶              B/op
+StringCompositeKeyBenchmark.compositeKey:·gc.count                          avgt   25       ≈ 0            counts
+
+StringCompositeKeyBenchmark.concatenation                                   avgt   25    53.241 ±   1.494   ns/op
+StringCompositeKeyBenchmark.concatenation:·gc.alloc.rate                    avgt   25  1433.808 ±  38.951  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.alloc.rate.norm               avgt   25   120.000 ±   0.001    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Eden_Space           avgt   25  1403.575 ± 280.133  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Eden_Space.norm      avgt   25   117.489 ±  23.459    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Old_Gen              avgt   25     0.004 ±   0.007  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Old_Gen.norm         avgt   25    ≈ 10⁻³              B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Survivor_Space       avgt   25     0.266 ±   0.407  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Survivor_Space.norm  avgt   25     0.022 ±   0.034    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.count                         avgt   25    43.000            counts
+StringCompositeKeyBenchmark.concatenation:·gc.time                          avgt   25   164.000                ms
+
+StringCompositeKeyBenchmark.list                                            avgt   25    31.001 ±   1.621   ns/op
+StringCompositeKeyBenchmark.list:·gc.alloc.rate                             avgt   25  1647.106 ±  85.724  MB/sec
+StringCompositeKeyBenchmark.list:·gc.alloc.rate.norm                        avgt   25    80.000 ±   0.001    B/op
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Eden_Space                    avgt   25  1632.839 ± 176.436  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Eden_Space.norm               avgt   25    79.396 ±   8.188    B/op
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Old_Gen                       avgt   25     0.006 ±   0.008  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Old_Gen.norm                  avgt   25    ≈ 10⁻⁴              B/op
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Survivor_Space                avgt   25     0.266 ±   0.407  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Survivor_Space.norm           avgt   25     0.013 ±   0.020    B/op
+StringCompositeKeyBenchmark.list:·gc.count                                  avgt   25    50.000            counts
+StringCompositeKeyBenchmark.list:·gc.time                                   avgt   25   159.000                ms
+
+StringCompositeKeyBenchmark.mapInMap                                        avgt   25     7.895 ±   0.206   ns/op
+StringCompositeKeyBenchmark.mapInMap:·gc.alloc.rate                         avgt   25    ≈ 10⁻⁴            MB/sec
+StringCompositeKeyBenchmark.mapInMap:·gc.alloc.rate.norm                    avgt   25    ≈ 10⁻⁵              B/op
+StringCompositeKeyBenchmark.mapInMap:·gc.count                              avgt   25       ≈ 0            counts
+
+JDK 14
+
+Benchmark                                                                   Mode  Cnt     Score     Error   Units
+
+StringCompositeKeyBenchmark.compositeKey                                    avgt   25     7.803 ±   0.647   ns/op
+StringCompositeKeyBenchmark.compositeKey:·gc.alloc.rate                     avgt   25  1974.855 ± 146.413  MB/sec
+StringCompositeKeyBenchmark.compositeKey:·gc.alloc.rate.norm                avgt   25    24.001 ±   0.001    B/op
+StringCompositeKeyBenchmark.compositeKey:·gc.churn.G1_Eden_Space            avgt   25  1993.263 ± 310.135  MB/sec
+StringCompositeKeyBenchmark.compositeKey:·gc.churn.G1_Eden_Space.norm       avgt   25    24.251 ±   3.311    B/op
+StringCompositeKeyBenchmark.compositeKey:·gc.churn.G1_Survivor_Space        avgt   25     0.278 ±   0.351  MB/sec
+StringCompositeKeyBenchmark.compositeKey:·gc.churn.G1_Survivor_Space.norm   avgt   25     0.003 ±   0.004    B/op
+StringCompositeKeyBenchmark.compositeKey:·gc.count                          avgt   25    61.000            counts
+StringCompositeKeyBenchmark.compositeKey:·gc.time                           avgt   25   100.000                ms
+
+StringCompositeKeyBenchmark.concatenation                                   avgt   25    69.781 ±   7.604   ns/op
+StringCompositeKeyBenchmark.concatenation:·gc.alloc.rate                    avgt   25  1335.176 ± 130.837  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.alloc.rate.norm               avgt   25   144.004 ±   0.001    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Eden_Space           avgt   25  1371.228 ± 291.177  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Eden_Space.norm      avgt   25   148.621 ±  32.540    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Survivor_Space       avgt   25     0.281 ±   0.378  MB/sec
+StringCompositeKeyBenchmark.concatenation:·gc.churn.G1_Survivor_Space.norm  avgt   25     0.031 ±   0.043    B/op
+StringCompositeKeyBenchmark.concatenation:·gc.count                         avgt   25    42.000            counts
+StringCompositeKeyBenchmark.concatenation:·gc.time                          avgt   25    89.000                ms
+
+StringCompositeKeyBenchmark.list                                            avgt   25    37.316 ±   6.355   ns/op
+StringCompositeKeyBenchmark.list:·gc.alloc.rate                             avgt   25  1895.005 ± 388.953  MB/sec
+StringCompositeKeyBenchmark.list:·gc.alloc.rate.norm                        avgt   25   105.602 ±   9.786    B/op
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Eden_Space                    avgt   25  1862.979 ± 451.413  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Eden_Space.norm               avgt   25   103.712 ±  16.885    B/op
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Survivor_Space                avgt   25     0.230 ±   0.352  MB/sec
+StringCompositeKeyBenchmark.list:·gc.churn.G1_Survivor_Space.norm           avgt   25     0.015 ±   0.024    B/op
+StringCompositeKeyBenchmark.list:·gc.count                                  avgt   25    57.000            counts
+StringCompositeKeyBenchmark.list:·gc.time                                   avgt   25   110.000                ms
+
+StringCompositeKeyBenchmark.mapInMap                                        avgt   25     9.330 ±   1.010   ns/op
+StringCompositeKeyBenchmark.mapInMap:·gc.alloc.rate                         avgt   25    ≈ 10⁻⁴            MB/sec
+StringCompositeKeyBenchmark.mapInMap:·gc.alloc.rate.norm                    avgt   25    ≈ 10⁻⁵              B/op
+StringCompositeKeyBenchmark.mapInMap:·gc.count                              avgt   25       ≈ 0            counts
+
+StringCompositeKeyBenchmark.record                                          avgt   25    13.240 ±   0.691   ns/op
+StringCompositeKeyBenchmark.record:·gc.alloc.rate                           avgt   25  1156.577 ±  54.748  MB/sec
+StringCompositeKeyBenchmark.record:·gc.alloc.rate.norm                      avgt   25    24.001 ±   0.001    B/op
+StringCompositeKeyBenchmark.record:·gc.churn.G1_Eden_Space                  avgt   25  1142.199 ± 305.697  MB/sec
+StringCompositeKeyBenchmark.record:·gc.churn.G1_Eden_Space.norm             avgt   25    23.747 ±   6.328    B/op
+StringCompositeKeyBenchmark.record:·gc.churn.G1_Survivor_Space              avgt   25     0.157 ±   0.295  MB/sec
+StringCompositeKeyBenchmark.record:·gc.churn.G1_Survivor_Space.norm         avgt   25     0.003 ±   0.006    B/op
+StringCompositeKeyBenchmark.record:·gc.count                                avgt   25    35.000            counts
+StringCompositeKeyBenchmark.record:·gc.time                                 avgt   25    83.000                ms
+
