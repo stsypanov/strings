@@ -1,0 +1,218 @@
+JDK 8
+
+                                              (latin)  (length)  Mode  Cnt     Score     Error   Units
+charAt                                           true         5  avgt   50    21.051 ±   0.796   ns/op
+charAt                                           true        10  avgt   50    44.002 ±   2.324   ns/op
+charAt                                           true        50  avgt   50   221.068 ±   7.422   ns/op
+charAt                                           true       100  avgt   50   410.162 ±  13.441   ns/op
+
+toCharArray                                      true         5  avgt   50    16.819 ±   0.662   ns/op
+toCharArray                                      true        10  avgt   50    28.364 ±   0.663   ns/op
+toCharArray                                      true        50  avgt   50   110.910 ±   1.144   ns/op
+toCharArray                                      true       100  avgt   50   205.694 ±   1.669   ns/op
+
+charAt:·gc.alloc.rate.norm                       true         5  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                       true        10  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                       true        50  avgt   50    ≈ 10⁻⁴              B/op
+charAt:·gc.alloc.rate.norm                       true       100  avgt   50    ≈ 10⁻⁴              B/op
+
+toCharArray:·gc.alloc.rate.norm                  true         5  avgt   50    32.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        10  avgt   50    40.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        50  avgt   50   120.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true       100  avgt   50   216.000 ±   0.001    B/op
+
+charAt                                          false         5  avgt   50    20.372 ±   0.406   ns/op
+charAt                                          false        10  avgt   50    39.962 ±   0.911   ns/op
+charAt                                          false        50  avgt   50   201.337 ±   3.752   ns/op
+charAt                                          false       100  avgt   50   410.530 ±  17.931   ns/op
+
+toCharArray                                     false         5  avgt   50    15.767 ±   0.606   ns/op
+toCharArray                                     false        10  avgt   50    26.258 ±   0.345   ns/op
+toCharArray                                     false        50  avgt   50   109.631 ±   1.064   ns/op
+toCharArray                                     false       100  avgt   50   205.815 ±   4.716   ns/op
+
+charAt:·gc.alloc.rate.norm                      false         5  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                      false        10  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                      false        50  avgt   50    ≈ 10⁻⁴              B/op
+charAt:·gc.alloc.rate.norm                      false       100  avgt   50    ≈ 10⁻⁴              B/op
+
+toCharArray:·gc.alloc.rate.norm                 false         5  avgt   50    32.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        10  avgt   50    40.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        50  avgt   50   120.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false       100  avgt   50   216.000 ±   0.001    B/op
+
+
+JDK 11
+
+                                              (latin)  (length)  Mode  Cnt     Score     Error   Units
+charAt                                           true         5  avgt   50    22.035 ±   1.557   ns/op
+charAt                                           true        10  avgt   50    41.800 ±   1.572   ns/op
+charAt                                           true        50  avgt   50   227.180 ±  18.655   ns/op
+charAt                                           true       100  avgt   50   474.719 ±  29.782   ns/op
+
+toCharArray                                      true         5  avgt   50    17.091 ±   0.662   ns/op
+toCharArray                                      true        10  avgt   50    26.167 ±   0.220   ns/op
+toCharArray                                      true        50  avgt   50   127.876 ±   2.106   ns/op
+toCharArray                                      true       100  avgt   50   244.449 ±   9.330   ns/op
+
+charAt:·gc.alloc.rate.norm                       true         5  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                       true        10  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                       true        50  avgt   50    ≈ 10⁻⁴              B/op
+charAt:·gc.alloc.rate.norm                       true       100  avgt   50    ≈ 10⁻⁴              B/op
+
+toCharArray:·gc.alloc.rate.norm                  true         5  avgt   50    32.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        10  avgt   50    40.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        50  avgt   50   120.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true       100  avgt   50   216.000 ±   0.001    B/op
+
+charAt                                          false         5  avgt   50    22.215 ±   2.064   ns/op
+charAt                                          false        10  avgt   50    45.606 ±   2.567   ns/op
+charAt                                          false        50  avgt   50   204.577 ±  18.302   ns/op
+charAt                                          false       100  avgt   50   404.056 ±  10.203   ns/op
+
+toCharArray                                     false         5  avgt   50    17.055 ±   0.556   ns/op
+toCharArray                                     false        10  avgt   50    29.254 ±   2.616   ns/op
+toCharArray                                     false        50  avgt   50   123.610 ±   5.033   ns/op
+toCharArray                                     false       100  avgt   50   226.174 ±   6.396   ns/op
+
+charAt:·gc.alloc.rate.norm                      false         5  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                      false        10  avgt   50    ≈ 10⁻⁵              B/op
+charAt:·gc.alloc.rate.norm                      false        50  avgt   50    ≈ 10⁻⁴              B/op
+charAt:·gc.alloc.rate.norm                      false       100  avgt   50    ≈ 10⁻⁴              B/op
+
+toCharArray:·gc.alloc.rate.norm                 false         5  avgt   50    32.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        10  avgt   50    40.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        50  avgt   50   120.000 ±   0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false       100  avgt   50   216.000 ±   0.001    B/op
+
+JDK 15 (EAP build)
+
+-Xint
+
+                                              (latin)  (length)  Mode  Cnt      Score      Error   Units
+charAt                                           true         5  avgt   50   1298.436 ±   48.759   ns/op
+charAt                                           true        10  avgt   50   2355.423 ±   84.693   ns/op
+charAt                                           true        50  avgt   50  11148.991 ±  356.432   ns/op
+charAt                                           true       100  avgt   50  21654.491 ±  685.363   ns/op
+
+toCharArray                                      true         5  avgt   50    747.657 ±   39.212   ns/op
+toCharArray                                      true        10  avgt   50   1049.822 ±   48.233   ns/op
+toCharArray                                      true        50  avgt   50   4028.859 ±  179.400   ns/op
+toCharArray                                      true       100  avgt   50   6817.398 ±  167.029   ns/op
+
+charAt:·gc.alloc.rate.norm                       true         5  avgt   50      0.001 ±    0.001    B/op
+charAt:·gc.alloc.rate.norm                       true        10  avgt   50      0.001 ±    0.001    B/op
+charAt:·gc.alloc.rate.norm                       true        50  avgt   50      0.005 ±    0.001    B/op
+charAt:·gc.alloc.rate.norm                       true       100  avgt   50      0.009 ±    0.001    B/op
+
+toCharArray:·gc.alloc.rate.norm                  true         5  avgt   50     32.005 ±    0.004    B/op
+toCharArray:·gc.alloc.rate.norm                  true        10  avgt   50     40.006 ±    0.005    B/op
+toCharArray:·gc.alloc.rate.norm                  true        50  avgt   50    120.049 ±    0.099    B/op
+toCharArray:·gc.alloc.rate.norm                  true       100  avgt   50    216.047 ±    0.038    B/op
+
+charAt                                          false         5  avgt   50   2737.696 ±  154.147   ns/op
+charAt                                          false        10  avgt   50   5349.009 ±  349.715   ns/op
+charAt                                          false        50  avgt   50  24656.311 ± 1254.231   ns/op
+charAt                                          false       100  avgt   50  50259.357 ± 2244.138   ns/op
+
+toCharArray                                     false         5  avgt   50   1489.616 ±  136.467   ns/op
+toCharArray                                     false        10  avgt   50   1965.616 ±  195.640   ns/op
+toCharArray                                     false        50  avgt   50   7059.160 ±  481.248   ns/op
+toCharArray                                     false       100  avgt   50  13521.922 ± 1040.463   ns/op
+
+charAt:·gc.alloc.rate.norm                      false         5  avgt   50      0.001 ±    0.001    B/op
+charAt:·gc.alloc.rate.norm                      false        10  avgt   50      0.002 ±    0.001    B/op
+charAt:·gc.alloc.rate.norm                      false        50  avgt   50      0.011 ±    0.001    B/op
+charAt:·gc.alloc.rate.norm                      false       100  avgt   50      0.021 ±    0.001    B/op
+
+toCharArray:·gc.alloc.rate.norm                 false         5  avgt   50     32.007 ±    0.007    B/op
+toCharArray:·gc.alloc.rate.norm                 false        10  avgt   50     40.009 ±    0.009    B/op
+toCharArray:·gc.alloc.rate.norm                 false        50  avgt   50    120.024 ±    0.032    B/op
+toCharArray:·gc.alloc.rate.norm                 false       100  avgt   50    216.045 ±    0.058    B/op
+
+-XX:TieredStopAtLevel=1
+
+                                              (latin)  (length)  Mode  Cnt    Score    Error   Units
+charAt                                           true         5  avgt   50   31.298 ±  0.533   ns/op
+charAt                                           true        10  avgt   50   61.624 ±  3.473   ns/op
+charAt                                           true        50  avgt   50  296.210 ±  8.720   ns/op
+charAt                                           true       100  avgt   50  617.520 ± 20.285   ns/op
+
+toCharArray                                      true         5  avgt   50   29.501 ±  2.687   ns/op
+toCharArray                                      true        10  avgt   50   60.586 ±  8.776   ns/op
+toCharArray                                      true        50  avgt   50  241.887 ± 15.774   ns/op
+toCharArray                                      true       100  avgt   50  589.147 ± 71.389   ns/op
+
+charAt                                          false         5  avgt   50   30.085 ±  1.209   ns/op
+charAt                                          false        10  avgt   50   57.978 ±  1.964   ns/op
+charAt                                          false        50  avgt   50  297.772 ± 26.671   ns/op
+charAt                                          false       100  avgt   50  559.140 ± 11.986   ns/op
+
+toCharArray                                     false         5  avgt   50   36.560 ±  5.120   ns/op
+toCharArray                                     false        10  avgt   50   51.573 ±  5.736   ns/op
+toCharArray                                     false        50  avgt   50  218.960 ± 32.842   ns/op
+toCharArray                                     false       100  avgt   50  487.791 ± 68.937   ns/op
+
+charAt:·gc.alloc.rate.norm                       true         5  avgt   50   ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                       true        10  avgt   50   ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                       true        50  avgt   50   ≈ 10⁻⁴             B/op
+charAt:·gc.alloc.rate.norm                       true       100  avgt   50   ≈ 10⁻⁴             B/op
+
+toCharArray:·gc.alloc.rate.norm                  true         5  avgt   50   32.004 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        10  avgt   50   40.006 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        50  avgt   50  120.019 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true       100  avgt   50  216.035 ±  0.003    B/op
+
+charAt:·gc.alloc.rate.norm                      false         5  avgt   50   ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                      false        10  avgt   50   ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                      false        50  avgt   50   ≈ 10⁻⁴             B/op
+charAt:·gc.alloc.rate.norm                      false       100  avgt   50   ≈ 10⁻⁴             B/op
+
+toCharArray:·gc.alloc.rate.norm                 false         5  avgt   50   32.004 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        10  avgt   50   40.006 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        50  avgt   50  120.019 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false       100  avgt   50  216.035 ±  0.003    B/op
+
+Full compilation
+
+                                              (latin)  (length)  Mode  Cnt     Score    Error   Units
+
+charAt                                           true         5  avgt   50    22.108 ±  2.493   ns/op
+charAt                                           true        10  avgt   50    46.214 ±  4.816   ns/op
+charAt                                           true        50  avgt   50   214.304 ±  6.605   ns/op
+charAt                                           true       100  avgt   50   429.772 ± 19.251   ns/op
+
+toCharArray                                      true         5  avgt   50    19.556 ±  0.535   ns/op
+toCharArray                                      true        10  avgt   50    31.901 ±  1.884   ns/op
+toCharArray                                      true        50  avgt   50   125.628 ±  3.868   ns/op
+toCharArray                                      true       100  avgt   50   240.475 ±  8.976   ns/op
+
+charAt:·gc.alloc.rate.norm                       true         5  avgt   50    ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                       true        10  avgt   50    ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                       true        50  avgt   50    ≈ 10⁻⁴             B/op
+charAt:·gc.alloc.rate.norm                       true       100  avgt   50    ≈ 10⁻⁴             B/op
+
+toCharArray:·gc.alloc.rate.norm                  true         5  avgt   50    32.004 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        10  avgt   50    40.006 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true        50  avgt   50   120.021 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                  true       100  avgt   50   216.036 ±  0.002    B/op
+
+charAt                                          false         5  avgt   50    21.509 ±  0.564   ns/op
+charAt                                          false        10  avgt   50    46.648 ±  3.342   ns/op
+charAt                                          false        50  avgt   50   208.855 ±  5.176   ns/op
+charAt                                          false       100  avgt   50   427.607 ± 31.424   ns/op
+
+toCharArray                                     false         5  avgt   50    20.425 ±  1.937   ns/op
+toCharArray                                     false        10  avgt   50    32.129 ±  0.399   ns/op
+toCharArray                                     false        50  avgt   50   142.450 ±  0.972   ns/op
+toCharArray                                     false       100  avgt   50   244.143 ±  2.302   ns/op
+
+charAt:·gc.alloc.rate.norm                      false         5  avgt   50    ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                      false        10  avgt   50    ≈ 10⁻⁵             B/op
+charAt:·gc.alloc.rate.norm                      false        50  avgt   50    ≈ 10⁻⁴             B/op
+charAt:·gc.alloc.rate.norm                      false       100  avgt   50    ≈ 10⁻⁴             B/op
+
+toCharArray:·gc.alloc.rate.norm                 false         5  avgt   50    32.004 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        10  avgt   50    40.006 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false        50  avgt   50   120.021 ±  0.001    B/op
+toCharArray:·gc.alloc.rate.norm                 false       100  avgt   50   216.037 ±  0.001    B/op
