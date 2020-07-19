@@ -1,0 +1,115 @@
+before
+
+Benchmark                                                                   (latin)  (length)   Mode  Cnt      Score     Error   Units
+InsertCharBenchmark.insertBetweenEachChar                                      true         5  thrpt   50  16992.105 ± 528.388  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                       true         5  thrpt   50    950.149 ±  29.528  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                  true         5  thrpt   50     88.010 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space              true         5  thrpt   50    949.294 ±  39.327  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm         true         5  thrpt   50     87.910 ±   2.219    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space          true         5  thrpt   50      0.005 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm     true         5  thrpt   50      0.001 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                            true         5  thrpt   50    333.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                             true         5  thrpt   50    239.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                      true        10  thrpt   50   9119.878 ± 421.776  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                       true        10  thrpt   50    602.728 ±  27.821  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                  true        10  thrpt   50    104.015 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space              true        10  thrpt   50    599.884 ±  38.304  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm         true        10  thrpt   50    103.460 ±   4.330    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space          true        10  thrpt   50      0.004 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm     true        10  thrpt   50      0.001 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                            true        10  thrpt   50    253.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                             true        10  thrpt   50    165.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                      true        50  thrpt   50   2270.251 ±  45.815  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                       true        50  thrpt   50    380.818 ±   7.679  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                  true        50  thrpt   50    264.046 ±   0.002    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space              true        50  thrpt   50    380.469 ±  19.722  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm         true        50  thrpt   50    263.672 ±  12.115    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space          true        50  thrpt   50      0.003 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm     true        50  thrpt   50      0.002 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                            true        50  thrpt   50    193.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                             true        50  thrpt   50    119.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                     false         5  thrpt   50  11468.241 ± 623.440  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                      false         5  thrpt   50   1286.373 ±  42.894  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                 false         5  thrpt   50    177.618 ±   5.880    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space             false         5  thrpt   50   1285.703 ±  48.823  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm        false         5  thrpt   50    177.580 ±   7.147    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space         false         5  thrpt   50      0.006 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm    false         5  thrpt   50      0.001 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                           false         5  thrpt   50    377.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                            false         5  thrpt   50    222.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                     false        10  thrpt   50   7150.812 ± 299.363  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                      false        10  thrpt   50   1138.984 ±  36.673  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                 false        10  thrpt   50    251.229 ±   4.801    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space             false        10  thrpt   50   1133.906 ±  46.542  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm        false        10  thrpt   50    250.087 ±   7.846    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space         false        10  thrpt   50      0.006 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm    false        10  thrpt   50      0.001 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                           false        10  thrpt   50    384.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                            false        10  thrpt   50    242.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                     false        50  thrpt   50   1613.470 ±  66.941  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                      false        50  thrpt   50    754.575 ±  31.291  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                 false        50  thrpt   50    736.091 ±   0.005    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space             false        50  thrpt   50    754.657 ±  40.715  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm        false        50  thrpt   50    736.453 ±  27.748    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space         false        50  thrpt   50      0.004 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm    false        50  thrpt   50      0.004 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                           false        50  thrpt   50    275.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                            false        50  thrpt   50    200.000                ms
+
+after
+
+Benchmark                                                                   (latin)  (length)   Mode  Cnt      Score     Error   Units
+InsertCharBenchmark.insertBetweenEachChar                                      true         5  thrpt   50  19249.086 ± 325.786  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                       true         5  thrpt   50   1076.281 ±  18.221  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                  true         5  thrpt   50     88.010 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space              true         5  thrpt   50   1077.504 ±  38.136  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm         true         5  thrpt   50     88.094 ±   2.613    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space          true         5  thrpt   50      0.006 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm     true         5  thrpt   50     ≈ 10⁻³              B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                            true         5  thrpt   50    378.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                             true         5  thrpt   50    264.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                      true        10  thrpt   50  12962.483 ±  61.992  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                       true        10  thrpt   50    856.530 ±   4.109  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                  true        10  thrpt   50    104.012 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space              true        10  thrpt   50    855.107 ±  14.286  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm         true        10  thrpt   50    103.845 ±   1.744    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space          true        10  thrpt   50      0.005 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm     true        10  thrpt   50      0.001 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                            true        10  thrpt   50    300.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                             true        10  thrpt   50    210.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                      true        50  thrpt   50   3232.475 ±  16.864  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                       true        50  thrpt   50    542.210 ±   2.814  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                  true        50  thrpt   50    264.038 ±   0.002    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space              true        50  thrpt   50    540.566 ±  29.411  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm         true        50  thrpt   50    263.226 ±  14.207    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space          true        50  thrpt   50      0.004 ±   0.001  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm     true        50  thrpt   50      0.002 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                            true        50  thrpt   50    228.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                             true        50  thrpt   50    163.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                     false         5  thrpt   50  26083.880 ± 218.046  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                      false         5  thrpt   50   2253.914 ±  18.885  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                 false         5  thrpt   50    136.012 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space             false         5  thrpt   50   2258.896 ±  45.743  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm        false         5  thrpt   50    136.318 ±   2.571    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space         false         5  thrpt   50      0.008 ±   0.002  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm    false         5  thrpt   50     ≈ 10⁻³              B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                           false         5  thrpt   50    610.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                            false         5  thrpt   50    414.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                     false        10  thrpt   50  18305.650 ± 180.684  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                      false        10  thrpt   50   2233.163 ±  22.069  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                 false        10  thrpt   50    192.017 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space             false        10  thrpt   50   2234.194 ±  49.574  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm        false        10  thrpt   50    192.085 ±   3.552    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space         false        10  thrpt   50      0.007 ±   0.002  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm    false        10  thrpt   50      0.001 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                           false        10  thrpt   50    594.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                            false        10  thrpt   50    402.000                ms
+InsertCharBenchmark.insertBetweenEachChar                                     false        50  thrpt   50   5712.175 ±  37.051  ops/ms
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate                      false        50  thrpt   50   2148.500 ±  13.880  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.alloc.rate.norm                 false        50  thrpt   50    592.053 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space             false        50  thrpt   50   2154.304 ±  43.832  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Eden_Space.norm        false        50  thrpt   50    593.654 ±  11.482    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space         false        50  thrpt   50      0.008 ±   0.002  MB/sec
+InsertCharBenchmark.insertBetweenEachChar:·gc.churn.G1_Survivor_Space.norm    false        50  thrpt   50      0.002 ±   0.001    B/op
+InsertCharBenchmark.insertBetweenEachChar:·gc.count                           false        50  thrpt   50    581.000            counts
+InsertCharBenchmark.insertBetweenEachChar:·gc.time                            false        50  thrpt   50    394.000                ms
