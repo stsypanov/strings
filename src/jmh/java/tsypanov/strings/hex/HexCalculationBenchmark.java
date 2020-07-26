@@ -1,4 +1,4 @@
-package tsypanov.strings.p6spy;
+package tsypanov.strings.hex;
 
 import tsypanov.strings.source.p6spy.ToHexStringConverter;
 import org.openjdk.jmh.annotations.Benchmark;
@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Fork(jvmArgsAppend = {"-Xms4g", "-Xmx4g", "-XX:+UseParallelGC"})
-public class SizedStringBuilderBenchmark {
+public class HexCalculationBenchmark {
 
   private byte[] bytes;
   private ToHexStringConverter converter;
