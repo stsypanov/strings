@@ -14,25 +14,23 @@ import static tsypanov.strings.source.string.CharacterReplacer.effective;
 import static tsypanov.strings.source.string.CharacterReplacer.ineffective;
 
 
+@State(Scope.Thread)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @BenchmarkMode(value = Mode.AverageTime)
 @Fork(jvmArgsAppend = {"-Xms2g", "-Xmx2g"})
 public class CharacterReplaceBenchmark {
+  private final Class<?> klass = String.class;
+  //try these to see the difference
+//    private final Class<?> klass = CharacterReplaceBenchmark.class;
+//    private final Class<?> klass = org.springframework.objenesis.instantiator.perc.PercSerializationInstantiator.class;
 
   @Benchmark
-  public StringBuilder manualReplace(Data data) {
-    return ineffective(data.klass, new StringBuilder());
+  public StringBuilder manualReplace() {
+    return ineffective(klass, new StringBuilder());
   }
 
   @Benchmark
-  public StringBuilder stringReplace(Data data) {
-    return effective(data.klass, new StringBuilder());
-  }
-
-  @State(Scope.Thread)
-  public static class Data {
-    private final Class<?> klass = String.class;
-//    private final Class<?> klass = CharacterReplaceBenchmark.class; //try this to see the difference
-//    private final Class<?> klass = org.springframework.objenesis.instantiator.perc.PercSerializationInstantiator.class; //try this to see the difference
+  public StringBuilder stringReplace() {
+    return effective(klass, new StringBuilder());
   }
 }
