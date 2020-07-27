@@ -14,7 +14,6 @@ import tsypanov.strings.source.maps.ConstantsEnum;
 
 import java.util.EnumMap;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -25,18 +24,18 @@ public class HashMapVsEnumMapIterationBenchmark {
 
   @Benchmark
   public void hashMap(Data data, Blackhole bh) {
-    Map<String, Integer> map = data.hashMap;
-    Set<String> keys = map.keySet();
-    for (String key : keys) {
+    var map = data.hashMap;
+
+    for (String key : data.hashMapKeySet) {
       bh.consume(map.get(key));
     }
   }
 
   @Benchmark
   public void enumMap(Data data, Blackhole bh) {
-    Map<ConstantsEnum, Integer> map = data.enumMap;
-    Set<ConstantsEnum> keys = map.keySet();
-    for (ConstantsEnum key : keys) {
+    var map = data.enumMap;
+
+    for (ConstantsEnum key : data.enumMapKeySet) {
       bh.consume(map.get(key));
     }
   }
@@ -45,17 +44,18 @@ public class HashMapVsEnumMapIterationBenchmark {
   public static class Data {
     private HashMap<String, Integer> hashMap;
     private EnumMap<ConstantsEnum, Integer> enumMap;
+    private Set<String> hashMapKeySet;
+    private Set<ConstantsEnum> enumMapKeySet;
 
     @Setup
-    @SuppressWarnings("ALL")
     public void setup() {
-      HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+      HashMap<String, Integer> hashMap = new HashMap<>();
       hashMap.put(Constants.MarginLeft, 1);
       hashMap.put(Constants.MarginRight, 2);
       hashMap.put(Constants.MarginTop, 3);
       hashMap.put(Constants.MarginBottom, 4);
 
-      EnumMap<ConstantsEnum, Integer> enumMap = new EnumMap<ConstantsEnum, Integer>(ConstantsEnum.class);
+      EnumMap<ConstantsEnum, Integer> enumMap = new EnumMap<>(ConstantsEnum.class);
       enumMap.put(ConstantsEnum.MarginLeft, 1);
       enumMap.put(ConstantsEnum.MarginRight, 2);
       enumMap.put(ConstantsEnum.MarginTop, 3);
@@ -63,6 +63,9 @@ public class HashMapVsEnumMapIterationBenchmark {
 
       this.hashMap = hashMap;
       this.enumMap = enumMap;
+
+      this.hashMapKeySet = hashMap.keySet();
+      this.enumMapKeySet = enumMap.keySet();
     }
   }
 }
