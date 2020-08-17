@@ -1,0 +1,33 @@
+JDK 16 EAP
+
+Benchmark                                                    Mode  Cnt     Score      Error   Units
+
+-Xint before
+
+UrlEncoderBenchmark.encodeUtf8                               avgt  100   179.905 ±    2.498   us/op
+UrlEncoderBenchmark.encodeUtf8:·gc.alloc.rate.norm           avgt  100  1712.752 ±    0.542    B/op
+
+-Xint after
+
+UrlEncoderBenchmark.encodeUtf8                               avgt  100   173.323 ±    3.459   us/op
+UrlEncoderBenchmark.encodeUtf8:·gc.alloc.rate.norm           avgt  100  1552.409 ±    0.339    B/op
+
+-XX:TieredStopAtLevel=1 before
+
+UrlEncoderBenchmark.encodeUtf8                               avgt  100     3.846 ±    0.021   us/op
+UrlEncoderBenchmark.encodeUtf8:·gc.alloc.rate.norm           avgt  100  1712.271 ±    0.011    B/op
+
+-XX:TieredStopAtLevel=1 after
+
+UrlEncoderBenchmark.encodeUtf8                               avgt  100     3.732 ±    0.013   us/op
+UrlEncoderBenchmark.encodeUtf8:·gc.alloc.rate.norm           avgt  100  1552.246 ±    0.014    B/op
+
+full compilation before
+
+UrlEncoderBenchmark.encodeUtf8                               avgt  100  1108.668 ±    6.226   ns/op
+UrlEncoderBenchmark.encodeUtf8:·gc.alloc.rate.norm           avgt  100  1712.202 ±    0.003    B/op
+
+full compilation after
+
+UrlEncoderBenchmark.encodeUtf8                               avgt  100  1454.647 ±    6.067   ns/op
+UrlEncoderBenchmark.encodeUtf8:·gc.alloc.rate.norm           avgt  100  1528.219 ±    0.007    B/op
