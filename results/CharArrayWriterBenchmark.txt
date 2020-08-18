@@ -1,0 +1,53 @@
+JDK 11
+
+Benchmark                                                  (length)       Score     Error   Units
+CharArrayWriterBenchmark.toCharArray                              5      19.767 ±   0.134   ns/op
+CharArrayWriterBenchmark.toCharArray                             10      18.664 ±   0.128   ns/op
+CharArrayWriterBenchmark.toCharArray                             50      21.823 ±   0.264   ns/op
+CharArrayWriterBenchmark.toCharArray                            100      29.041 ±   0.145   ns/op
+CharArrayWriterBenchmark.toCharArray                           1000     250.129 ±   2.446   ns/op
+
+CharArrayWriterBenchmark.toString                                 5      15.361 ±   0.752   ns/op
+CharArrayWriterBenchmark.toString                                10      14.472 ±   0.251   ns/op
+CharArrayWriterBenchmark.toString                                50      16.048 ±   0.102   ns/op
+CharArrayWriterBenchmark.toString                               100      19.245 ±   0.137   ns/op
+CharArrayWriterBenchmark.toString                              1000      82.624 ±   1.824   ns/op
+
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm          5      80.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm         10      96.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm         50     216.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm        100     360.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm       1000    3056.000 ±   0.001    B/op
+
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm             5      48.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm            10      56.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm            50      96.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm           100     144.000 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm          1000    1040.000 ±   0.001    B/op
+
+JDK 16 local build
+
+Benchmark                                                  (length)       Score     Error   Units
+CharArrayWriterBenchmark.toCharArray                              5      25.495 ±   0.172   ns/op
+CharArrayWriterBenchmark.toCharArray                             10      25.944 ±   0.021   ns/op
+CharArrayWriterBenchmark.toCharArray                             50      29.016 ±   0.022   ns/op
+CharArrayWriterBenchmark.toCharArray                            100      33.930 ±   0.055   ns/op
+CharArrayWriterBenchmark.toCharArray                           1000     244.525 ±   1.049   ns/op
+
+CharArrayWriterBenchmark.toString                                 5      21.152 ±   0.017   ns/op
+CharArrayWriterBenchmark.toString                                10      20.981 ±   0.020   ns/op
+CharArrayWriterBenchmark.toString                                50      23.288 ±   0.136   ns/op
+CharArrayWriterBenchmark.toString                               100      26.565 ±   0.047   ns/op
+CharArrayWriterBenchmark.toString                              1000      80.920 ±   0.629   ns/op
+
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm          5      80.008 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm         10      96.009 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm         50     216.014 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm        100     360.019 ±   0.001    B/op
+CharArrayWriterBenchmark.toCharArray:·gc.alloc.rate.norm       1000    3056.131 ±   0.001    B/op
+
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm             5      48.005 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm            10      56.005 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm            50      96.008 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm           100     144.011 ±   0.001    B/op
+CharArrayWriterBenchmark.toString:·gc.alloc.rate.norm          1000    1040.044 ±   0.001    B/op
