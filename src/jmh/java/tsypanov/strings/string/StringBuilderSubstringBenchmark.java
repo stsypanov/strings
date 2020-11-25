@@ -14,8 +14,9 @@ import tsypanov.strings.source.utils.RandomStringGenerator;
 import java.util.concurrent.TimeUnit;
 
 /**
- * {@link} https://youtrack.jetbrains.com/issue/IDEA-240288
- * {@link} https://github.com/spring-projects/spring-framework/pull/25024/files
+ * @see <a href="https://youtrack.jetbrains.com/issue/IDEA-240288">https://youtrack.jetbrains.com/issue/IDEA-240288</a>
+ * <br/>
+ * @see <a href="https://github.com/spring-projects/spring-framework/pull/25024/files">https://github.com/spring-projects/spring-framework/pull/25024/files</a>
  */
 
 @BenchmarkMode(Mode.AverageTime)

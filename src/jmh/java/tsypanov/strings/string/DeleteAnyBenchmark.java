@@ -12,7 +12,7 @@ import org.openjdk.jmh.annotations.State;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @see https://github.com/spring-projects/spring-framework/pull/24870
+ * @see <a href="https://github.com/spring-projects/spring-framework/pull/24870">https://github.com/spring-projects/spring-framework/pull/24870</a>
  */
 @State(Scope.Thread)
 @BenchmarkMode(Mode.AverageTime)
