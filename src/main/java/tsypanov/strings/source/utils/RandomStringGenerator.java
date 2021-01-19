@@ -9,12 +9,11 @@ public final class RandomStringGenerator {
 
     ThreadLocalRandom random = ThreadLocalRandom.current();
 
-    StringBuilder sb = new StringBuilder(length);
+    char[] array = new char[length];
     for (int i = 0; i < length; i++) {
-      char c = chars[random.nextInt(chars.length)];
-      sb.append(c);
+      array[i] = chars[random.nextInt(chars.length)];
     }
 
-    return sb.toString();
+    return new String(array);
   }
 }
