@@ -1,8 +1,29 @@
 # Список бенчмарков с краткими пояснениями | Benchmarks list with brief comments
 
-Scroll down to read English version (not implemented yet)
+Scroll down to read English version (not written yet)
 
-##StringBuilderAppendBenchmark
+## HashMapVsEnumMapInstantiationBenchmark
+
+Показывает разницу между созданием `HashMap<String, Integer>` и `EnumMap<ConstantsEnum, Integer>`.
+
+## HashMapVsEnumMapIterationBenchmark
+
+Показывает разницу между перебором `HashMap<String, Integer>` и `EnumMap<ConstantsEnum, Integer>`.
+
+## MethodToStringBenchmark
+
+Позволяет измерить стоимость вызова `Method.toString()`.
+
+## StringCompositeKeyBenchmark
+
+Показывает разницу между склеиванием строки для создания составного ключа и использованием отдельного класса
+измерить стоимость вызова `Method.toString()`.
+
+Случаи из жизни:
+- https://github.com/spring-projects/spring-framework/pull/22451
+- http://cr.openjdk.java.net/~igerasim/6996807/00/webrev/
+
+## StringBuilderAppendBenchmark
 
 Показывает разницу между двумя способами добавления подстроки к `StringBuilder`-у:
 ```java
@@ -31,9 +52,11 @@ String append(String str, int from, int to) {
 
 Причина в том, что метод `StringBuilder.append(String)` интринзифицирован, а `StringBuilder.append(String, int, int)`
 делегирует вызов методу `AbstractStringBuilder.append(String, int, int)`, внутри которого строка добавляется познаково
-с мопощью цикла в методе `AbstractStringBuilder.appendChars(CharSequence, int, int)`.
+с помощью цикла в методе `AbstractStringBuilder.appendChars(CharSequence, int, int)`.
 
-##CharacterReplaceBenchmark
+Пример из жизни: https://gitlab.ow2.org/asm/asm/-/merge_requests/236/diffs
+
+## CharacterReplaceBenchmark
 Показывает разницу между двумя способами замены всех вхождений знака в строке на другой знак.
 Первый способ:
 ```java
@@ -56,7 +79,7 @@ public String stringReplace(Class<String> klass) {
 ```
 Пример из жизни: https://github.com/spring-projects/spring-framework/pull/22299/files
 
-Второй способ проще и даёт лучшую производительность. Вот итог замера для класс `java.lang.String`:
+Второй способ проще и даёт лучшую производительность. Вот итог замера для класса `java.lang.String`:
 ```
 CharacterReplaceBenchmark.manualReplace                        avgt   25    58,474 ±   4,184   ns/op
 CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   25   112,000 ±   0,001    B/op
@@ -64,3 +87,6 @@ CharacterReplaceBenchmark.manualReplace:·gc.alloc.rate.norm    avgt   25   112,
 CharacterReplaceBenchmark.stringReplace                        avgt   25    15,185 ±   0,067   ns/op
 CharacterReplaceBenchmark.stringReplace:·gc.alloc.rate.norm    avgt   25    56,000 ±   0,001    B/op
 ```
+Если брать класс с более длинным именем, то разница в потреблении памяти будет сглаживаться в пользу
+`String.replace(char, char)`
+
