@@ -1,0 +1,108 @@
+JDK 16 before
+                                                   (length)  Mode  Cnt     Score    Error   Units
+quoteReplacement                                          8  avgt   50    45.405 ±  0.217   ns/op
+quoteReplacement:·gc.alloc.rate                           8  avgt   50  1231.406 ±  5.896  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                      8  avgt   50    88.010 ±  0.001    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                  8  avgt   50  1231.288 ± 34.202  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm             8  avgt   50    88.003 ±  2.426    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space              8  avgt   50     0.007 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm         8  avgt   50    ≈ 10⁻³             B/op
+quoteReplacement:·gc.count                                8  avgt   50   432.000           counts
+quoteReplacement:·gc.time                                 8  avgt   50   207.000               ms
+
+quoteReplacement                                         64  avgt   50   215.836 ±  1.106   ns/op
+quoteReplacement:·gc.alloc.rate                          64  avgt   50   847.833 ±  4.330  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                     64  avgt   50   288.040 ±  0.001    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                 64  avgt   50   846.361 ± 20.575  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm            64  avgt   50   287.533 ±  6.729    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space             64  avgt   50     0.006 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm        64  avgt   50     0.002 ±  0.001    B/op
+quoteReplacement:·gc.count                               64  avgt   50   357.000           counts
+quoteReplacement:·gc.time                                64  avgt   50   166.000               ms
+
+quoteReplacement                                        128  avgt   50   431.836 ±  6.967   ns/op
+quoteReplacement:·gc.alloc.rate                         128  avgt   50   754.099 ± 12.704  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                    128  avgt   50   512.072 ±  0.003    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                128  avgt   50   756.282 ± 28.770  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm           128  avgt   50   513.611 ± 17.973    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space            128  avgt   50     0.005 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm       128  avgt   50     0.004 ±  0.001    B/op
+quoteReplacement:·gc.count                              128  avgt   50   319.000           counts
+quoteReplacement:·gc.time                               128  avgt   50   158.000               ms
+
+quoteReplacement                                        256  avgt   50   823.652 ± 17.026   ns/op
+quoteReplacement:·gc.alloc.rate                         256  avgt   50   729.440 ± 15.282  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                    256  avgt   50   944.132 ±  0.004    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                256  avgt   50   730.133 ± 27.445  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm           256  avgt   50   944.821 ± 27.124    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space            256  avgt   50     0.005 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm       256  avgt   50     0.007 ±  0.001    B/op
+quoteReplacement:·gc.count                              256  avgt   50   308.000           counts
+quoteReplacement:·gc.time                               256  avgt   50   147.000               ms
+
+JDK 16 after
+
+                                                   (length)  Mode  Cnt     Score    Error   Units
+quoteReplacement                                          8  avgt   50    39.460 ±  0.688   ns/op
+quoteReplacement:·gc.alloc.rate                           8  avgt   50  1934.003 ± 29.545  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                      8  avgt   50   120.010 ±  0.001    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                  8  avgt   50  1933.554 ± 47.819  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm             8  avgt   50   119.991 ±  2.422    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space              8  avgt   50     0.010 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm         8  avgt   50     0.001 ±  0.001    B/op
+quoteReplacement:·gc.count                                8  avgt   50   530.000           counts
+quoteReplacement:·gc.time                                 8  avgt   50   254.000               ms
+
+quoteReplacement                                         64  avgt   50   165.445 ±  0.377   ns/op
+quoteReplacement:·gc.alloc.rate                          64  avgt   50  1658.792 ±  3.766  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                     64  avgt   50   432.040 ±  0.001    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                 64  avgt   50  1657.996 ± 43.513  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm            64  avgt   50   431.836 ± 11.333    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space             64  avgt   50     0.008 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm        64  avgt   50     0.002 ±  0.001    B/op
+quoteReplacement:·gc.count                               64  avgt   50   473.000           counts
+quoteReplacement:·gc.time                                64  avgt   50   224.000               ms
+quoteReplacement                                        128  avgt   50   297.921 ±  5.969   ns/op
+quoteReplacement:·gc.alloc.rate                         128  avgt   50  1674.425 ± 33.071  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                    128  avgt   50   784.072 ±  0.002    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                128  avgt   50  1677.062 ± 49.580  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm           128  avgt   50   785.354 ± 17.883    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space            128  avgt   50     0.008 ±  0.001  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm       128  avgt   50     0.004 ±  0.001    B/op
+quoteReplacement:·gc.count                              128  avgt   50   479.000           counts
+quoteReplacement:·gc.time                               128  avgt   50   227.000               ms
+quoteReplacement                                        256  avgt   50   577.703 ± 11.137   ns/op
+quoteReplacement:·gc.alloc.rate                         256  avgt   50  1621.105 ± 31.754  MB/sec
+quoteReplacement:·gc.alloc.rate.norm                    256  avgt   50  1472.136 ±  0.003    B/op
+quoteReplacement:·gc.churn.G1_Eden_Space                256  avgt   50  1625.693 ± 46.089  MB/sec
+quoteReplacement:·gc.churn.G1_Eden_Space.norm           256  avgt   50  1476.130 ± 27.925    B/op
+quoteReplacement:·gc.churn.G1_Survivor_Space            256  avgt   50     0.008 ±  0.002  MB/sec
+quoteReplacement:·gc.churn.G1_Survivor_Space.norm       256  avgt   50     0.008 ±  0.001    B/op
+quoteReplacement:·gc.count                              256  avgt   50   466.000           counts
+quoteReplacement:·gc.time                               256  avgt   50   217.000               ms
+
+
+JDK 16 before
+                                                   (length)  Mode  Cnt     Score    Error   Units
+quoteReplacement                                          8  avgt   50    45.405 ±  0.217   ns/op
+quoteReplacement                                         64  avgt   50   215.836 ±  1.106   ns/op
+quoteReplacement                                        128  avgt   50   431.836 ±  6.967   ns/op
+quoteReplacement                                        256  avgt   50   823.652 ± 17.026   ns/op
+
+quoteReplacement:·gc.alloc.rate.norm                      8  avgt   50    88.010 ±  0.001    B/op
+quoteReplacement:·gc.alloc.rate.norm                     64  avgt   50   288.040 ±  0.001    B/op
+quoteReplacement:·gc.alloc.rate.norm                    128  avgt   50   512.072 ±  0.003    B/op
+quoteReplacement:·gc.alloc.rate.norm                    256  avgt   50   944.132 ±  0.004    B/op
+
+JDK 16 after
+                                                   (length)  Mode  Cnt     Score    Error   Units
+quoteReplacement                                          8  avgt   50    39.460 ±  0.688   ns/op
+quoteReplacement                                         64  avgt   50   165.445 ±  0.377   ns/op
+quoteReplacement                                        128  avgt   50   297.921 ±  5.969   ns/op
+quoteReplacement                                        256  avgt   50   577.703 ± 11.137   ns/op
+
+quoteReplacement:·gc.alloc.rate.norm                      8  avgt   50   120.010 ±  0.001    B/op
+quoteReplacement:·gc.alloc.rate.norm                     64  avgt   50   432.040 ±  0.001    B/op
+quoteReplacement:·gc.alloc.rate.norm                    128  avgt   50   784.072 ±  0.002    B/op
+quoteReplacement:·gc.alloc.rate.norm                    256  avgt   50  1472.136 ±  0.003    B/op
+
