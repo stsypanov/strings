@@ -1,7 +1,7 @@
 package tsypanov.strings.replace;
 
 import org.openjdk.jmh.annotations.*;
-import tsypanov.strings.source.utils.StringUtils;
+import tsypanov.strings.source.utils.RandomStringGenerator;
 
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
@@ -13,18 +13,27 @@ public class QuoteReplacementBenchmark {
 
   @Benchmark
   public String quoteReplacement(Data data) {
-    return Matcher.quoteReplacement(data.string);
+    var string = data.string;
+    return Matcher.quoteReplacement(string);
   }
 
   @State(Scope.Thread)
   public static class Data {
     @Param({"8", "64", "128", "256"})
     private int length;
+    @Param({"true", "false"})
+    private boolean latin;
     private String string;
 
     @Setup
     public void setup() {
-      string = "$" + StringUtils.repeat('z', length - 2) + "$";
+      String alphabet = latin
+        ? "abcdefghijklmnopqrstuvwxyz"        // English
+        : "абвгдеёжзиклмнопрстуфхцчшщьыъэюя"; // Russian
+
+      RandomStringGenerator generator = new RandomStringGenerator();
+
+      string = '\\' + generator.randomString(alphabet, length - 2) + '$';
     }
   }
 }
